@@ -1,0 +1,39 @@
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 0.8rem;
+}
+
+.nav-link {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+#dark-mode-toggle {
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(0, 100%, 33%);
+}
+body.latex-dark #dark-mode-toggle {
+  color: hsl(196 80% 77%);
+}
+
+#dark-mode-icon {
+  margin-right: 0.3rem;
+}
