@@ -7,6 +7,16 @@ const lightModeSVG = `<svg id="dark-mode-icon" xmlns="http://www.w3.org/2000/svg
 </svg>`;
 
 document.addEventListener("DOMContentLoaded", function () {
+  // Retrieve the dark mode state from localStorage
+  let isDarkMode = localStorage.getItem("dark-mode") === "true";
+
+  // Apply the dark mode class based on the stored state
+  if (isDarkMode) {
+    document.body.classList.add("latex-dark");
+  } else {
+    document.body.classList.remove("latex-dark");
+  }
+
   fetch("components/navbar.html")
     .then((response) => response.text())
     .then((data) => {
@@ -19,20 +29,26 @@ document.addEventListener("DOMContentLoaded", function () {
         const darkModeIcon = document.getElementById("dark-mode-icon");
 
         if (darkModeToggleButton && darkModeIcon) {
-          let isDarkMode = false; // Initial state (false = light mode)
+          // Set initial button state
+          darkModeToggleButton.innerHTML = isDarkMode
+            ? lightModeSVG + "Light Mode"
+            : darkModeSVG + "Dark Mode";
 
           darkModeToggleButton.addEventListener("click", function () {
-            isDarkMode = !isDarkMode; // Toggle state
+            // Toggle dark mode state
+            isDarkMode = !isDarkMode;
 
-            // Change icon based on the state
+            // Update icon and button text based on the new state
             if (isDarkMode) {
               darkModeToggleButton.innerHTML = lightModeSVG + "Light Mode";
-              document.body.classList.add("latex-dark"); // Example: add dark mode class to body
+              document.body.classList.add("latex-dark");
             } else {
               darkModeToggleButton.innerHTML = darkModeSVG + "Dark Mode";
-              document.body.classList.remove("latex-dark"); // Example: remove dark mode class from body
+              document.body.classList.remove("latex-dark");
             }
 
+            // Save the new state to localStorage
+            localStorage.setItem("dark-mode", isDarkMode);
             console.log("Dark mode toggled:", isDarkMode);
           });
         } else {
