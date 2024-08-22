@@ -20,6 +20,8 @@ a:hover {
 .nav-link {
   padding-left: 0.8rem;
   padding-right: 0.8rem;
+  cursor: pointer;
+  color: hsl(0, 100%, 33%);
 }
 
 #dark-mode-toggle {
@@ -31,6 +33,9 @@ a:hover {
   color: hsl(0, 100%, 33%);
 }
 body.latex-dark #dark-mode-toggle {
+  color: hsl(196 80% 77%);
+}
+body.latex-dark .nav-link {
   color: hsl(196 80% 77%);
 }
 

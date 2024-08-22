@@ -17,46 +17,77 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.classList.remove("latex-dark");
   }
 
-  fetch("components/navbar.html")
-    .then((response) => response.text())
-    .then((data) => {
-      const navbarContainer = document.getElementById("navbar");
-      if (navbarContainer) {
-        navbarContainer.innerHTML = data;
+  const darkModeToggleButton = document.getElementById("dark-mode-toggle");
+  const darkModeIcon = document.getElementById("dark-mode-icon");
 
-        const darkModeToggleButton =
-          document.getElementById("dark-mode-toggle");
-        const darkModeIcon = document.getElementById("dark-mode-icon");
+  if (darkModeToggleButton && darkModeIcon) {
+    // Set initial button state
+    darkModeToggleButton.innerHTML = isDarkMode
+      ? lightModeSVG + "Light Mode"
+      : darkModeSVG + "Dark Mode";
 
-        if (darkModeToggleButton && darkModeIcon) {
-          // Set initial button state
-          darkModeToggleButton.innerHTML = isDarkMode
-            ? lightModeSVG + "Light Mode"
-            : darkModeSVG + "Dark Mode";
+    darkModeToggleButton.addEventListener("click", function () {
+      // Toggle dark mode state
+      isDarkMode = !isDarkMode;
 
-          darkModeToggleButton.addEventListener("click", function () {
-            // Toggle dark mode state
-            isDarkMode = !isDarkMode;
-
-            // Update icon and button text based on the new state
-            if (isDarkMode) {
-              darkModeToggleButton.innerHTML = lightModeSVG + "Light Mode";
-              document.body.classList.add("latex-dark");
-            } else {
-              darkModeToggleButton.innerHTML = darkModeSVG + "Dark Mode";
-              document.body.classList.remove("latex-dark");
-            }
-
-            // Save the new state to localStorage
-            localStorage.setItem("dark-mode", isDarkMode);
-            console.log("Dark mode toggled:", isDarkMode);
-          });
-        } else {
-          console.log("Button or icon not found");
-        }
+      // Update icon and button text based on the new state
+      if (isDarkMode) {
+        darkModeToggleButton.innerHTML = lightModeSVG + "Light Mode";
+        document.body.classList.add("latex-dark");
       } else {
-        console.log("Navbar container not found");
+        darkModeToggleButton.innerHTML = darkModeSVG + "Dark Mode";
+        document.body.classList.remove("latex-dark");
       }
-    })
-    .catch((error) => console.error("Error loading navbar:", error));
+
+      // Save the new state to localStorage
+      localStorage.setItem("dark-mode", isDarkMode);
+      // console.log("Dark mode toggled:", isDarkMode);
+    });
+  }
 });
+
+// Create variables to hold the HTML content
+let aboutContent, contactContent, cvContent, blogContent;
+
+// Fetch and load HTML files into the variables
+Promise.all([
+  fetch("home.html").then((response) => response.text()),
+  fetch("about.html").then((response) => response.text()),
+  fetch("contact.html").then((response) => response.text()),
+  fetch("cv.html").then((response) => response.text()),
+  fetch("blog.html").then((response) => response.text()),
+])
+  .then((data) => {
+    [homeContent, aboutContent, contactContent, cvContent, blogContent] = data;
+    changeContent("home");
+    console.log("All content loaded");
+    // You can now use aboutContent, contactContent, cvContent, and blogContent
+    // to inject into your DOM, process further, etc.
+  })
+  .catch((error) => {
+    console.error("Error loading HTML files:", error);
+  });
+
+const changeContent = (page) => {
+  const contentDiv = document.getElementById("content");
+
+  switch (page) {
+    case "home":
+      contentDiv.innerHTML = homeContent;
+      break;
+    case "about":
+      contentDiv.innerHTML = aboutContent;
+      break;
+    case "blog":
+      contentDiv.innerHTML = blogContent;
+      break;
+    case "cv":
+      contentDiv.innerHTML = cvContent;
+      break;
+    case "contact":
+      contentDiv.innerHTML = contactContent;
+      break;
+    default:
+      contentDiv.innerHTML = "<h2>Page not found!</h2>";
+  }
+};

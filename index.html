@@ -37,23 +37,31 @@
   </head>
 
   <body id="top">
-    <nav id="navbar"></nav>
+    <nav id="navbar">
+      <a class="nav-link" onclick="changeContent('home')">Home</a>
+      <a class="nav-link" onclick="changeContent('about')">About</a>
+      <a class="nav-link" onclick="changeContent('blog')">Blog</a>
+      <a class="nav-link" onclick="changeContent('cv')">CV</a>
+      <a class="nav-link" onclick="changeContent('contact')">Contact</a>
+      <button id="dark-mode-toggle">
+        <svg
+          id="dark-mode-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-moon-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"
+          />
+        </svg>
+        Dark mode
+      </button>
+    </nav>
 
-    <figure>
-      <img
-        src="/assets/personal.JPG"
-        loading="lazy"
-        alt="Mountain landscape"
-        width="600"
-        height="400"
-      />
-    </figure>
-
-    <div class="abstract short-bio">
-      <h2>Short Bio</h2>
-      <p>Hello, I am Siddharth Tumre.</p>
-    </div>
-    <!-- <a href="./demo.html">Demo page</a> -->
+    <div id="content"></div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
