@@ -46,8 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Create variables to hold the HTML content
-let aboutContent, contactContent, cvContent, blogContent;
+// Variables to hold HTML content
+let homeContent, aboutContent, contactContent, cvContent, blogContent;
+
+// Variable to track the current page
+let currentPage = "";
 
 // Fetch and load HTML files into the variables
 Promise.all([
@@ -61,14 +64,17 @@ Promise.all([
     [homeContent, aboutContent, contactContent, cvContent, blogContent] = data;
     changeContent("home");
     console.log("All content loaded");
-    // You can now use aboutContent, contactContent, cvContent, and blogContent
-    // to inject into your DOM, process further, etc.
   })
   .catch((error) => {
     console.error("Error loading HTML files:", error);
   });
 
 const changeContent = (page) => {
+  // Check if the selected page is already the current page
+  if (currentPage === page) {
+    return; // If true, exit the function without reloading content
+  }
+
   const contentDiv = document.getElementById("content");
 
   switch (page) {
@@ -90,4 +96,5 @@ const changeContent = (page) => {
     default:
       contentDiv.innerHTML = "<h2>Page not found!</h2>";
   }
+  currentPage = page;
 };

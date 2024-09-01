@@ -1,3 +1,9 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 a {
   text-decoration: none;
 }
@@ -41,4 +47,9 @@ body.latex-dark .nav-link {
 
 #dark-mode-icon {
   margin-right: 0.3rem;
+}
+
+#footer {
+  margin-top: auto;
+  text-align: center;
 }
