@@ -50,32 +50,16 @@ document.addEventListener("DOMContentLoaded", function () {
 let homeContent, aboutContent, contactContent, cvContent, blogContent;
 
 // Variable to track the current page
-let currentPage = "";
+let currentPage = localStorage.getItem("currentPage") || "home";
 
-// Fetch and load HTML files into the variables
-Promise.all([
-  fetch("home.html").then((response) => response.text()),
-  fetch("about.html").then((response) => response.text()),
-  fetch("contact.html").then((response) => response.text()),
-  fetch("cv.html").then((response) => response.text()),
-  fetch("blog.html").then((response) => response.text()),
-])
-  .then((data) => {
-    [homeContent, aboutContent, contactContent, cvContent, blogContent] = data;
-    changeContent("home");
-    console.log("All content loaded");
-  })
-  .catch((error) => {
-    console.error("Error loading HTML files:", error);
-  });
-
-const changeContent = (page) => {
-  // Check if the selected page is already the current page
-  if (currentPage === page) {
-    return; // If true, exit the function without reloading content
-  }
-
+// Function to change content based on the page
+const changeContent = (page, force = false) => {
   const contentDiv = document.getElementById("content");
+
+  // Prevent reloading the content if already on the same page, unless forced
+  if (currentPage === page && !force) {
+    return;
+  }
 
   switch (page) {
     case "home":
@@ -96,5 +80,25 @@ const changeContent = (page) => {
     default:
       contentDiv.innerHTML = "<h2>Page not found!</h2>";
   }
+
+  // Update the currentPage variable and save it to localStorage
   currentPage = page;
+  localStorage.setItem("currentPage", currentPage);
 };
+
+// Fetch and load HTML files into the variables
+Promise.all([
+  fetch("home.html").then((response) => response.text()),
+  fetch("about.html").then((response) => response.text()),
+  fetch("contact.html").then((response) => response.text()),
+  fetch("cv.html").then((response) => response.text()),
+  fetch("blog.html").then((response) => response.text()),
+])
+  .then((data) => {
+    [homeContent, aboutContent, contactContent, cvContent, blogContent] = data;
+
+    changeContent(currentPage, true);
+  })
+  .catch((error) => {
+    console.error("Error loading HTML files:", error);
+  });
