@@ -22,4 +22,6 @@ format:
 execute:
   freeze: auto
 
-
+comments:
+  giscus:
+    repo: siddharthtumre/siddharthtumre.github.io
