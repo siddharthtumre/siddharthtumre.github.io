@@ -8,7 +8,6 @@ toc: false
 categories:
   - Industrial Safety
   - Large Language Models
-  - Non-Archival Posters & Workshop Papers
 ---
 
 ## Abstract

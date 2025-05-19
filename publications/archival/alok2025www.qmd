@@ -9,7 +9,6 @@ toc: false
 categories:
   - Near-Duplicate Detection
   - Data Resource
-  - Archival Conference Papers
 ---
 
 ## Citation (APA)

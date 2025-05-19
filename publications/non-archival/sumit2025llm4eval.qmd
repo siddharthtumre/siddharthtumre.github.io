@@ -9,7 +9,6 @@ categories:
   - Industrial Safety
   - Large Language Models
   - LLM-as-a-Judge
-  - Non-Archival Posters & Workshop Papers
 ---
 
 ## Abstract
