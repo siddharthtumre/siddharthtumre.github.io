@@ -1,15 +1,21 @@
 ---
-title: "siddharthtumre"
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  feed: true
-  sort-ui: false
-  filter-ui: false
+title: "Siddharth Tumre"
+subtitle: "Researcher at [TCS Research](https://www.tcs.com/what-we-do/research)"
 page-layout: full
-title-block-banner: true
+title-block-banner: false
+toc: false
+about:
+  template: jolla
+  image: profile.jpeg
+comments: false
 ---
 
+Hi! I'm Siddharth. Here you can find a lot of content about NLP, LLMs, AI, Multimodality and other things I'm interested in.
 
+Feel free to [get in touch](mailto:%20siddharth.tumre@outlook.com)!
+
+👨🏻‍💻 [about](about.qmd)
+
+📝 [blog posts](blog.qmd)
+
+📚 [publications](publications.qmd)

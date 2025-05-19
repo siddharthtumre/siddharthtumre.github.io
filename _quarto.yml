@@ -2,18 +2,31 @@ project:
   type: website
 
 website:
-  title: "siddharthtumre"
+  title: "siddharth.tumre"
   navbar:
     right:
-      - about.qmd
+      - href: blog.qmd
+        text: Blog 
+      - href: about.qmd
+        text: About  
       - icon: github
-        href: https://github.com/
+        href: https://github.com/siddharthtumre
       - icon: twitter
-        href: https://twitter.com
+        href: https://x.com/siddharth_tumre
       - icon: rss
         href: index.xml
+  page-footer:
+    left: "Website made with [Quarto](https://quarto.org/), by Siddharth Tumre."
+    right:
+      - icon: envelope
+        href: mailto:siddharth.tumre@outlook.com
+      - icon: github
+        href: https://github.com/siddharthtumre
+      - icon: linkedin
+        href: https://www.linkedin.com/in/siddharth-tumre/
 format:
   html:
+    smooth-scroll: true
     theme:
       - cosmo
       - brand

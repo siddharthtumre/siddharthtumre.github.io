@@ -1,0 +1,7 @@
+---
+title: "Publications"
+page-layout: full
+title-block-banner: false
+toc: false
+comments: false
+---

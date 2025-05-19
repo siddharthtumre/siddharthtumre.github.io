@@ -1,19 +1,36 @@
 ---
-title: "About"
-image: profile.jpg
+title: "Siddharth Tumre"
+image: profile.jpeg
 about:
-  template: jolla
+  template: solana
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com
+    - icon: envelope
+      text: Email
+      href: mailto:siddharth.tumre@outlook.com
+    - icon: github
+      text: GitHub
+      href: https://github.com/siddharthtumre
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
-    - icon: github
-      text: Github
-      href: https://github.com
-
+      href: https://www.linkedin.com/in/siddharth-tumre/
+    - icon: twitter
+      text: twitter
+      href: https://x.com/siddharth_tumre
+comments: false
 ---
 
-About this blog
+::: {#hero-heading}
+
+## Education
+
+Indian Institute of Technology Delhi
+M.Tech in Computer Technology | 2021 - 2023
+
+Chaitanya Bharathi Institute of Technology | Hyderabad
+B.E in Computer Science and Engineering | 2017 - 2021
+
+## Experience
+
+TCS Research (_TRDDC_) | Researcher | September 2023 - present
+
+:::
