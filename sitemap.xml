@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://siddharthtumre.github.io/publications/proceedings/tumre2025newletter.html</loc>
-    <lastmod>2025-05-19T17:35:50.176Z</lastmod>
+    <loc>https://siddharthtumre.github.io/publications/non-archival/shubham2025aaai.html</loc>
+    <lastmod>2025-05-19T20:48:08.962Z</lastmod>
+  </url>
+  <url>
+    <loc>https://siddharthtumre.github.io/publications/archival/tumre2025flairs.html</loc>
+    <lastmod>2025-05-19T20:48:08.961Z</lastmod>
+  </url>
+  <url>
+    <loc>https://siddharthtumre.github.io/publications/archival/tumre2025newletter.html</loc>
+    <lastmod>2025-05-19T20:48:08.962Z</lastmod>
   </url>
   <url>
     <loc>https://siddharthtumre.github.io/blog.html</loc>
-    <lastmod>2025-05-19T17:35:50.171Z</lastmod>
+    <lastmod>2025-05-19T20:48:08.956Z</lastmod>
   </url>
   <url>
     <loc>https://siddharthtumre.github.io/publications.html</loc>
-    <lastmod>2025-05-19T17:35:50.175Z</lastmod>
+    <lastmod>2025-05-19T20:48:08.961Z</lastmod>
   </url>
   <url>
     <loc>https://siddharthtumre.github.io/about.html</loc>
-    <lastmod>2025-05-19T17:35:50.171Z</lastmod>
+    <lastmod>2025-05-19T20:48:08.956Z</lastmod>
   </url>
   <url>
     <loc>https://siddharthtumre.github.io/index.html</loc>
-    <lastmod>2025-05-19T17:35:50.171Z</lastmod>
+    <lastmod>2025-05-19T20:48:08.957Z</lastmod>
   </url>
   <url>
-    <loc>https://siddharthtumre.github.io/publications/proceedings/tumre2025ndd.html</loc>
-    <lastmod>2025-05-19T17:35:50.176Z</lastmod>
+    <loc>https://siddharthtumre.github.io/publications/archival/tumre2025ndd.html</loc>
+    <lastmod>2025-05-19T20:48:08.961Z</lastmod>
+  </url>
+  <url>
+    <loc>https://siddharthtumre.github.io/publications/archival/alok2025www.html</loc>
+    <lastmod>2025-05-19T20:48:08.961Z</lastmod>
+  </url>
+  <url>
+    <loc>https://siddharthtumre.github.io/publications/non-archival/sumit2025llm4eval.html</loc>
+    <lastmod>2025-05-19T20:48:08.962Z</lastmod>
   </url>
 </urlset>

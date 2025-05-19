@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Siddharth Tumre, Sangameshwar Patil, Alok Kumar">
 
-<title>Publications – siddharth.tumre</title>
+<title>Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds – siddharth.tumre</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +24,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dde8d7229bfee0f8bb5efd37f0f9ae1e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-dde8d7229bfee0f8bb5efd37f0f9ae1e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,106 +68,20 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-archival .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-execute','listing-comments','listing-language','listing-title','listing-type','listing-author','listing-year','listing-publication','listing-link','listing-toc','listing-categories','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-pdf',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-publication","listing-year"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-archival'] = new List('listing-archival', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-non-archival .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-execute','listing-comments','listing-language','listing-title','listing-type','listing-author','listing-year','listing-publication','listing-toc','listing-categories','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-publication","listing-year"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-non-archival'] = new List('listing-non-archival', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">siddharth.tumre</span>
     </a>
   </div>
@@ -179,15 +92,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./publications.html" aria-current="page"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -196,7 +109,7 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-more">    
         <li>
-    <a class="dropdown-item" href="./CV1104.pdf" rel="noopener" target="_blank"><i class="bi bi-file-earmark-pdf" role="img">
+    <a class="dropdown-item" href="../../CV1104.pdf" rel="noopener" target="_blank"><i class="bi bi-file-earmark-pdf" role="img">
 </i> 
  <span class="dropdown-text">View CV (PDF)</span></a>
   </li>  
@@ -211,7 +124,7 @@ window.Quarto = {
  <span class="dropdown-text">Twitter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./index.xml"><i class="bi bi-rss" role="img">
+    <a class="dropdown-item" href="../../index.xml"><i class="bi bi-rss" role="img">
 </i> 
  <span class="dropdown-text">RSS Feed</span></a>
   </li>  
@@ -228,20 +141,29 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="RGF0YSUyMFJlc291cmNl">Data Resource <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW5kdXN0cmlhbCUyMFNhZmV0eQ==">Industrial Safety <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TGFyZ2UlMjBMYW5ndWFnZSUyME1vZGVscw==">Large Language Models <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TExNLWFzLWEtSnVkZ2U=">LLM-as-a-Judge <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TmVhci1EdXBsaWNhdGUlMjBEZXRlY3Rpb24=">Near-Duplicate Detection <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TmV3cyUyMEFuYWx5dGljcw==">News Analytics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TmV3c2xldHRlciUyMEdlbmVyYXRpb24=">Newsletter Generation <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Publications</h1>
-</div>
+<h1 class="title">Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Near-Duplicate Detection</div>
+    <div class="quarto-category">News Analytics</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Siddharth Tumre, Sangameshwar Patil, Alok Kumar </p>
+          </div>
+  </div>
     
   
     
@@ -252,182 +174,15 @@ window.Quarto = {
 </header>
 
 
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">Publications</li>
-  </ol>
-</nav>
-<section id="archival-conference-papers" class="level2">
-<h2 class="anchored" data-anchor-id="archival-conference-papers">Archival Conference Papers</h2>
-<div id="listing-archival" class="quarto-listing quarto-listing-container-custom">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-archival-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-archival'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-author" data-direction="asc">
-        Author
-      </option>
-      <option value="listing-publication" data-direction="asc">
-        Publication
-      </option>
-      <option value="listing-year" data-direction="asc">
-        Year
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<ul class="pub-list list">
-
-  <li data-index="0" data-categories="SW5kdXN0cmlhbCUyMFNhZmV0eSUyQ0xhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHM=" data-listing-file-modified-sort="1747687688961" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
-    <span class="listing-title lead">Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety</span><br>
-    <span class="listing-author">Siddharth Tumre, Sumit Koundanya, Shubham Kumbhar, Sangameshwar Patil</span><br>
-    <span class="listing-publication fst-italic ">FLAIRS</span>
-    <span class="listing-year">(2025)</span><br>
-    <a href="./publications/archival/tumre2025flairs.html" class="btn btn-outline-primary btn-sm">
-      Details
-    </a>
-    
-    <a href="https://doi.org/10.32473/flairs.38.1.138959" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer">
-      <i class="bi bi-link-45deg"></i> Link
-    </a>
-    
-    
-    <a href="https://journals.flvc.org/FLAIRS/article/view/138959/144022" class="btn btn-outline-info btn-sm" target="_blank" rel="noopener noreferrer">
-      <i class="bi bi-file-earmark-text"></i> pdf
-    </a>
-    
-  </li>
-
-  <li data-index="1" data-categories="TmVhci1EdXBsaWNhdGUlMjBEZXRlY3Rpb24lMkNEYXRhJTIwUmVzb3VyY2U=" data-listing-file-modified-sort="1747687688961" data-listing-reading-time-sort="2" data-listing-word-count-sort="270">
-    <span class="listing-title lead">Benchmarking Near-Duplicate Detection in the era of Pay-walled News</span><br>
-    <span class="listing-author">Alok Kumar, Siddharth Tumre, Sangameshwar Patil</span><br>
-    <span class="listing-publication fst-italic ">WWW</span>
-    <span class="listing-year">(2025)</span><br>
-    <a href="./publications/archival/alok2025www.html" class="btn btn-outline-primary btn-sm">
-      Details
-    </a>
-    
-    <a href="https://doi.org/10.1145/3701716.3715303" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer">
-      <i class="bi bi-link-45deg"></i> Link
-    </a>
-    
-    
-  </li>
-
-  <li data-index="2" data-categories="TmVhci1EdXBsaWNhdGUlMjBEZXRlY3Rpb24lMkNOZXdzJTIwQW5hbHl0aWNz" data-listing-file-modified-sort="1747687688961" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
-    <span class="listing-title lead">Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds</span><br>
-    <span class="listing-author">Siddharth Tumre, Sangameshwar Patil, Alok Kumar</span><br>
-    <span class="listing-publication fst-italic ">NAACL</span>
-    <span class="listing-year">(2025)</span><br>
-    <a href="./publications/archival/tumre2025ndd.html" class="btn btn-outline-primary btn-sm">
-      Details
-    </a>
-    
-    <a href="https://aclanthology.org/2025.naacl-industry.73/" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer">
-      <i class="bi bi-link-45deg"></i> Link
-    </a>
-    
-    
-    <a href="https://aclanthology.org/2025.naacl-industry.73.pdf" class="btn btn-outline-info btn-sm" target="_blank" rel="noopener noreferrer">
-      <i class="bi bi-file-earmark-text"></i> pdf
-    </a>
-    
-  </li>
-
-  <li data-index="3" data-categories="TmV3c2xldHRlciUyMEdlbmVyYXRpb24lMkNOZXdzJTIwQW5hbHl0aWNz" data-listing-file-modified-sort="1747687688962" data-listing-reading-time-sort="2" data-listing-word-count-sort="234">
-    <span class="listing-title lead">Newsletter-Factory: A Thematic Newsletter Generation Tool for Curating Business Insights</span><br>
-    <span class="listing-author">Siddharth Tumre, Alok Kumar, Ajay Phade, Nihar Riswadkar and Sangameshwar Patil</span><br>
-    <span class="listing-publication fst-italic ">Text2Story</span>
-    <span class="listing-year">(2025)</span><br>
-    <a href="./publications/archival/tumre2025newletter.html" class="btn btn-outline-primary btn-sm">
-      Details
-    </a>
-    
-    <a href="https://ceur-ws.org/Vol-3964/" class="btn btn-outline-secondary btn-sm" target="_blank" rel="noopener noreferrer">
-      <i class="bi bi-link-45deg"></i> Link
-    </a>
-    
-    
-    <a href="https://ceur-ws.org/Vol-3964/paper17.pdf" class="btn btn-outline-info btn-sm" target="_blank" rel="noopener noreferrer">
-      <i class="bi bi-file-earmark-text"></i> pdf
-    </a>
-    
-  </li>
-
-</ul>
-
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
+<section id="citation-apa" class="level2">
+<h2 class="anchored" data-anchor-id="citation-apa">Citation (APA)</h2>
+<blockquote class="blockquote">
+<p>Tumre, S., Patil, S., &amp; Kumar, A. (2025, April). Improved near-duplicate detection for aggregated and paywalled news-feeds. In Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 3: Industry Track) (pp.&nbsp;979-987).</p>
+</blockquote>
 </section>
-<section id="non-archival-posters-workshop-papers" class="level2">
-<h2 class="anchored" data-anchor-id="non-archival-posters-workshop-papers">Non-Archival Posters &amp; Workshop Papers</h2>
-<div id="listing-non-archival" class="quarto-listing quarto-listing-container-custom">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-non-archival-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-non-archival'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-      <option value="" disabled="" selected="" hidden="">Order By</option>
-      <option value="index" data-direction="asc">Default</option>
-      <option value="listing-title" data-direction="asc">
-        Title
-      </option>
-      <option value="listing-author" data-direction="asc">
-        Author
-      </option>
-      <option value="listing-publication" data-direction="asc">
-        Publication
-      </option>
-      <option value="listing-year" data-direction="asc">
-        Year
-      </option>
-    </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
-</div>
-<ul class="pub-list list">
-
-  <li data-index="0" data-categories="SW5kdXN0cmlhbCUyMFNhZmV0eSUyQ0xhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHM=" data-listing-file-modified-sort="1747687688962" data-listing-reading-time-sort="1" data-listing-word-count-sort="198">
-    <span class="listing-title lead">Employing Open-Source LLMs for Preventive Action Recommendations to Avoid Industrial Safety Incidents</span><br>
-    <span class="listing-author">Shubham Kumbhar, Siddharth Tumre, Sumit Koundanya, Sangameshwar Patil</span><br>
-    <span class="listing-publication fst-italic ">Workshop on Open-Source AI for Mainstream Use, AAAI</span>
-    <span class="listing-year">(2025)</span><br>
-    <a href="./publications/non-archival/shubham2025aaai.html" class="btn btn-outline-primary btn-sm">
-      Details
-    </a>
-    
-    
-  </li>
-
-  <li data-index="1" data-categories="SW5kdXN0cmlhbCUyMFNhZmV0eSUyQ0xhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHMlMkNMTE0tYXMtYS1KdWRnZQ==" data-listing-file-modified-sort="1747687688962" data-listing-reading-time-sort="2" data-listing-word-count-sort="209">
-    <span class="listing-title lead">LLM-as-a-Judge: Evaluating LLM Recommendations for Industrial Safety</span><br>
-    <span class="listing-author">Sumit Koundanya, Shubham Kumbhar, Siddharth Tumre, Sangameshwar Patil</span><br>
-    <span class="listing-publication fst-italic ">LLM4Eval @ WSDM</span>
-    <span class="listing-year">(2025)</span><br>
-    <a href="./publications/non-archival/sumit2025llm4eval.html" class="btn btn-outline-primary btn-sm">
-      Details
-    </a>
-    
-    
-  </li>
-
-</ul>
-
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>News aggregators play a key role in the rapidly evolving digital landscape by providing comprehensive and timely news stories aggregated from diverse sources into one feed. As these articles are sourced from different outlets, they often end up covering the same underlying event but differ in phrasing, formatting or supplemented with additional details. It is crucial for the news aggregators to identify these near-duplicates, improving the content quality and user engagement by steering away from redundant information. The problem of near-duplicate news detection has become harder with increasing use of paywalls by the news websites resulting in restricted access to the content. It is now common to get only the headline and a short snippet from the article. Previous works have concentrated on full length versions of documents such as webpages. There is very little work that focuses on this variation of the near-duplicate detection problem in which only headline and a small text blurb is available for each news article. We propose Near-Duplicate Detection Using Metadata Augmented Communities (NDD-MAC) approach that combines embeddings from pretrained language model (PLM) and latent metadata of a news article followed by community detection to identify clusters of near-duplicates. We show the efficacy of proposed approach using 2 different real-world datasets. By integrating metadata with community detection, NDD-MAC is able to detect nuanced similarities and differences in news snippets and offers an industrial scale solution for the near-duplicate detection in scenarios with restricted content availability.</p>
 
 
 </section>
@@ -832,6 +587,35 @@ window.Quarto = {
     }
   });
   </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "siddharthtumre/siddharthtumre.github.io";
+    script.dataset.repoId = "R_kgDOOsDEMQ";
+    script.dataset.category = "General";
+    script.dataset.categoryId = "DIC_kwDOOsDEMc4CqS2n";
+    script.dataset.mapping = "title";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -869,5 +653,5 @@ window.Quarto = {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
