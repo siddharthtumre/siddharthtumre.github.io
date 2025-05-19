@@ -2,5 +2,12 @@
   {
     "listing": "/blog.html",
     "items": []
+  },
+  {
+    "listing": "/publications.html",
+    "items": [
+      "/publications/proceedings/tumre2025ndd.html",
+      "/publications/proceedings/tumre2025newletter.html"
+    ]
   }
 ]
