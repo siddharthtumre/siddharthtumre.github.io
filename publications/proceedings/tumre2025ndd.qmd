@@ -12,9 +12,9 @@ categories:
   - News Analytics
 ---
 
-## Citation (ACL)
+## Citation (APA)
 
-> Siddharth Tumre, Sangameshwar Patil, and Alok Kumar. 2025. Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds. In Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 3: Industry Track), pages 979–987, Albuquerque, New Mexico. Association for Computational Linguistics.
+> Tumre, S., Patil, S., & Kumar, A. (2025, April). Improved near-duplicate detection for aggregated and paywalled news-feeds. In Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 3: Industry Track) (pp. 979-987).
 
 
 ## Abstract

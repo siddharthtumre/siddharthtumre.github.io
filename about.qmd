@@ -23,7 +23,7 @@ comments: false
 
 Siddharth is a Researcher at [TCS Research](https://www.tcs.com/what-we-do/research) in the Data and Decision Sciences Research Area. His work lies at the intersection of Natural Language Processing (NLP) and Large Language Models (LLMs), with a focus on developing robust, domain-specific applications for real-world impact.
 
-[Curriculam Vitae](CV1104.pdf)
+[**View Full Curriculum Vitae**](CV1104.pdf){target="_blank" rel="noopener"}
 
 ## Education
 
