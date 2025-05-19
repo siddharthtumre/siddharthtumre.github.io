@@ -8,22 +8,28 @@ website:
   title: "siddharth.tumre"
   navbar:
     right:
-      - href: CV1104.pdf
-        text: CV
-        target: _blank
-        rel: noopener
       - href: publications.qmd
         text: Publications
       - href: blog.qmd
         text: Blog 
       - href: about.qmd
-        text: About  
-      - icon: github
-        href: https://github.com/siddharthtumre
-      - icon: twitter
-        href: https://x.com/siddharth_tumre
-      - icon: rss
-        href: index.xml
+        text: About
+      - text: More
+        menu:
+          - icon: file-earmark-pdf
+            text: View CV (PDF)
+            url: CV1104.pdf
+            target: _blank
+            rel: noopener
+          - icon: github
+            text: GitHub
+            href: https://github.com/siddharthtumre
+          - icon: twitter
+            text: Twitter
+            href: https://x.com/siddharth_tumre
+          - icon: rss
+            text: RSS Feed
+            href: index.xml
   page-footer:
     left: "Website made with [Quarto](https://quarto.org/), by Siddharth Tumre."
     right:

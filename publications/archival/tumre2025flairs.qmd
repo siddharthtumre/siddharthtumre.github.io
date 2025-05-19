@@ -1,0 +1,22 @@
+---
+title: "Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety"
+type: "proceeding"
+author: "Siddharth Tumre, Sumit Koundanya, Shubham Kumbhar, Sangameshwar Patil"
+year: "2025"
+publication: "FLAIRS"
+link: "https://doi.org/10.32473/flairs.38.1.138959"
+pdf: "https://journals.flvc.org/FLAIRS/article/view/138959/144022"
+toc: false
+categories:
+  - Industrial Safety
+  - Large Language Models
+---
+
+## Citation (APA)
+
+> Tumre, S., Koundanya, S., Kumbhar, S., & Patil, S. (2025). Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety. The International FLAIRS Conference Proceedings, 38(1). https://doi.org/10.32473/flairs.38.1.138959
+
+
+## Abstract
+
+Improving industrial safety using NLP technologies supports the triple bottom line of environmental, social and economic sustainability. Rapid evolution of Large Language Models (LLMs) has potential to transform the industrial safety and improve disaster mitigation. In this paper, we evaluate and benchmark the feasibility of using Falcon and Phi3 open-source LLMs for the task of generating preventive recommendations to improve industrial safety. Based on domain expert evaluation, we find that the standard, pre-trained LLMs have limitations concerning the quality and quantity of recommendations generated. They can be of diverse quality, such as specific, generic, or irrelevant. We find that the pre-trained version of Phi3 is better than base version of Falcon for the proposed task. We show that the quantity, output format as well as domain-awareness of the Falcon can be significantly improved using supervised fine-tuning (SFT) with a small amount of labeled data that illustrates the expected output. In spite of the quality improvement post-SFT and the high societal and economic impact of the application, there are still many areas of improvement, which we point to as part of future work. To the best of our knowledge, this is the first attempt to align LLMs for industrial safety recommendation improvement.

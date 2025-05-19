@@ -1,0 +1,15 @@
+---
+title: "LLM-as-a-Judge: Evaluating LLM Recommendations for Industrial Safety"
+type: "article"
+author: "Sumit Koundanya, Shubham Kumbhar, Siddharth Tumre, Sangameshwar Patil"
+year: "2025"
+publication: "LLM4Eval @ WSDM"
+toc: false
+categories:
+  - Industrial Safety
+  - Large Language Models
+  - LLM-as-a-Judge
+---
+
+## Abstract
+Safety incidents and accidents pose significant challenges to industries, affecting workers, their families, productivity, and economic outcomes. To mitigate these risks, industries often engage specialized agencies to investigate the root causes of accidents and recommend preventive actions to avoid recurrence. Large Language Models (LLMs) offer the potential to automate and streamline the task of generating preventive action recommendations, reducing human effort. However, the reliability of these models is hindered by issues such as hallucination, raising concerns about their helpfulness in industrial safety. This poses another challenge to assess the quality and feasibility of these generated recommendations. This study aims at exploring the application of LLMs to further categorize these safety recommendations based on the relevance to the safety incident into Specific, Generic, or Irrelevant categories. A total of 2272 generated recommendations were reviewed and annotated as part of gold standard data. We examine the agreement between LLM generated and Human annotated labels for categorization of generated recommendations. Our findings suggest that LLMs currently struggle to accurately categorize their recommendations as specific to incidents. In comparison, traditional supervised learning methods outperform LLMs in recommendation classification tasks. This study highlights the limitations of existing open-source LLMs and offers insights into areas for improvement to enhance their applicability in industrial safety contexts.

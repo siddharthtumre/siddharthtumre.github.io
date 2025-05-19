@@ -1,0 +1,17 @@
+---
+title: "Employing Open-Source LLMs for Preventive Action Recommendations to Avoid Industrial Safety Incidents"
+type: "article"
+author: "Shubham Kumbhar, Siddharth Tumre, Sumit Koundanya, Sangameshwar Patil"
+year: "2025"
+publication: "Workshop on Open-Source AI for Mainstream Use, AAAI"
+toc: false
+categories:
+  - Industrial Safety
+  - Large Language Models
+---
+
+## Abstract
+
+Rapid evolution of Large Language Models (LLMs) has revolutionized many industrial applications. However, proprietary LLMs often come with constraints such as restrictions on customizability, high cost and privacy of sensitive data, which make them less viable for industrial applications. Open-source LLMs, on the other hand, provide an accessible and flexible alternative which can enable industries to adapt models to domain-specific needs without such restrictions. This flexibility is especially crucial for manufacturing, chemical processes, construction, energy etc.
+
+In this paper, we evaluate and benchmark the feasibility of using Falcon LLM, an open-source model for the task of generating preventive recommendations to improve industrial safety. Based on domain expert evaluation, we find that the standard, pre-trained Falcon LLM has limitations concerning the quality and quantity of recommendations generated. They can be of diverse quality, such as, specific, generic, or irrelevant. We show that the quantity, output format as well as domain-awareness of the model can be significantly improved using supervised fine-tuning (SFT) with a small amount of labeled data that illustrates the expected output. The quality of recommendations also improves after the fine-tuning; however, there are still many areas of improvement for this task, which we point to in this paper.

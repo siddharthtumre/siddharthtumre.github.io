@@ -1,0 +1,21 @@
+---
+title: "Benchmarking Near-Duplicate Detection in the era of Pay-walled News"
+type: "proceeding"
+author: "Alok Kumar, Siddharth Tumre, Sangameshwar Patil"
+year: "2025"
+publication: "WWW"
+link: "https://doi.org/10.1145/3701716.3715303"
+toc: false
+categories:
+  - Near-Duplicate Detection
+  - Data Resource
+---
+
+## Citation (APA)
+
+> Kumar, A., Patil, S., & Tumre, S. (2025). Benchmarking Near-Duplicate Detection in the era of Pay-walled News. In Companion Proceedings of the ACM Web Conference 2025 (WWW '25). Association for Computing Machinery, New York, NY, USA. https://doi.org/10.1145/3701716.3715303.
+
+
+## Abstract
+
+Redundancy and access restriction due to paywalls are emerging as key challenges faced by web-enabled digital news ecosystem. Over the past few years, newspapers and other news sources have increasingly put-up subscription-based paywalls for accessing their content. Further, copyright, and other legal issues have curtailed the amount of text content that can be freely shared in a news feed. Well-known near-duplicate detection algorithms such as Locality Sensitive Hashing (LSH) and its variants have been used on full length versions of documents such as webpages and news articles. So, unlike traditional input of full text articles, we now get access to significantly less quantity of text available as input. This has added to the challenges and complexities to be tackled by the near-duplicate detection algorithms. There are few, if any, gold-standard datasets available for this variation of the news duplicate detection problem. In this paper, we present NDD-NS, a dataset of business news snippets which have been annotated with near-duplicates. These news snippets are representative of challenges in the content received in the news feed nowadays. Further, we benchmark the Minhash-LSH, Simhash and sentence transformer based neural approaches. We observe that hashing based LSH approaches achieve significantly less accuracy than what it achieved on the SpotSigs dataset. This highlights the challenging nature of the NDD-NS dataset. We believe this dataset will pave way for novel approaches and further research for near-duplicate detection task.
