@@ -1,10 +1,17 @@
 project:
   type: website
+  preview:
+    port: 4200
+    browser: false
 
 website:
   title: "siddharth.tumre"
   navbar:
     right:
+      - href: CV1104.pdf
+        text: CV
+      - href: publications.qmd
+        text: Publications
       - href: blog.qmd
         text: Blog 
       - href: about.qmd

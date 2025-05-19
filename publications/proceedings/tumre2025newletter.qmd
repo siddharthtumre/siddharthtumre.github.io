@@ -1,0 +1,22 @@
+---
+title: "Newsletter-Factory: A Thematic Newsletter Generation Tool for Curating Business Insights"
+type: "proceeding"
+author: "Siddharth Tumre, Alok Kumar, Ajay Phade, Nihar Riswadkar and Sangameshwar Patil"
+year: "2025"
+publication: "Text2Story"
+link: "https://ceur-ws.org/Vol-3964/"
+pdf: "https://ceur-ws.org/Vol-3964/paper17.pdf"
+toc: false
+categories:
+  - Newsletter Generation
+  - News Analytics
+---
+
+## Citation (ACL)
+
+> Siddharth Tumre, Sangameshwar Patil, and Alok Kumar. 2025. Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds. In Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 3: Industry Track), pages 979–987, Albuquerque, New Mexico. Association for Computational Linguistics.
+
+
+## Abstract
+
+Keeping track of the evolving business and technology landscape is essential for enterprises to remain relevant, competitive, and successful in today’s dynamic marketplace. Gaining insights into how business narratives unfold is crucial for strategic decision-making, risk assessment, and market analysis. For enterprise executives, filtering through vast amounts of news content to identify what is relevant and useful can be extremely time-consuming as well as act as a distraction from other core tasks for their role. Newsletters provide a solution by curating the most relevant information, reducing information overload, and delivering value to targeted readers. Creating periodic newsletters that deliver value to the target audience and achieve business objectives require a combination of domain knowledge, business expertise, and technology awareness across various disciplines–making it an effort-intensive and expensive proposition for enterprises. In this paper, we demonstrate Newsletter-Factory, a tool that can create thematic and customizable newsletters based on enterprise requirements. It efficiently processes huge amounts of data from multiple sources and leverages near-duplicate detection techniques to eliminate redundancy. The tool categorizes news articles into high-level themes and also generates fine-grained sub-labels enabling comprehensive understanding of emerging trends and key narratives. By automating the newsletter creation process, Newsletter-Factory alleviates the pain and cost of creating enterprise newsletters targeted towards business users and employees.
