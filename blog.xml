@@ -6,10 +6,41 @@
       version="2.0">
 <channel>
 <title>siddharth.tumre</title>
-<link>https://siddharthtumre.github.io/blog.html</link>
-<atom:link href="https://siddharthtumre.github.io/blog.xml" rel="self" type="application/rss+xml"/>
-<description></description>
+<link>http://siddharthtumre.github.io/blog.html</link>
+<atom:link href="http://siddharthtumre.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<description>Personal blog on research, insights, and applications of NLP and Large Language Models.</description>
 <generator>quarto-1.7.31</generator>
-<lastBuildDate>Tue, 20 May 2025 04:46:21 GMT</lastBuildDate>
+<lastBuildDate>Mon, 19 May 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Welcome to My Research Blog</title>
+  <dc:creator>Siddharth Tumre</dc:creator>
+  <link>http://siddharthtumre.github.io/posts/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Welcome to my personal research blog! I’m <strong>Siddharth Tumre</strong>, a researcher at <a href="https://www.tcs.com/what-we-do/research">TCS Research</a>, where my research focuses on applying <strong>Natural Language Processing (NLP)</strong> and <strong>Large Language Models (LLMs)</strong> for real-world applications.</p>
+<p>This space will serve as a platform to:</p>
+<ul>
+<li>📚 Share insights and updates from my research</li>
+<li>🛠️ Discuss technical approaches, challenges, and experiments</li>
+<li>🔎 Reflect on trends in NLP, LLMs, and their applications</li>
+<li>✍️ Post tutorials, demos, and thoughts.</li>
+</ul>
+<p>If you’re interested in <strong>applied AI</strong>, <strong>language models</strong>, or how to make cutting-edge NLP work for real-world domains, you’re in the right place.</p>
+<hr>
+<p>Thanks for stopping by!</p>
+<p>Feel free to connect with me on <a href="https://www.linkedin.com/in/siddharth-tumre/">Linkedin</a> or <a href="https://x.com/siddharth_tumre">Twitter</a>.</p>
+
+
+
+ ]]></description>
+  <category>introduction</category>
+  <category>blog</category>
+  <guid>http://siddharthtumre.github.io/posts/welcome/</guid>
+  <pubDate>Mon, 19 May 2025 00:00:00 GMT</pubDate>
+</item>
 </channel>
 </rss>

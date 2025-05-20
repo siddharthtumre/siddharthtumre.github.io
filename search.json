@@ -56,32 +56,18 @@
     "text": "Abstract\nKeeping track of the evolving business and technology landscape is essential for enterprises to remain relevant, competitive, and successful in today’s dynamic marketplace. Gaining insights into how business narratives unfold is crucial for strategic decision-making, risk assessment, and market analysis. For enterprise executives, filtering through vast amounts of news content to identify what is relevant and useful can be extremely time-consuming as well as act as a distraction from other core tasks for their role. Newsletters provide a solution by curating the most relevant information, reducing information overload, and delivering value to targeted readers. Creating periodic newsletters that deliver value to the target audience and achieve business objectives require a combination of domain knowledge, business expertise, and technology awareness across various disciplines–making it an effort-intensive and expensive proposition for enterprises. In this paper, we demonstrate Newsletter-Factory, a tool that can create thematic and customizable newsletters based on enterprise requirements. It efficiently processes huge amounts of data from multiple sources and leverages near-duplicate detection techniques to eliminate redundancy. The tool categorizes news articles into high-level themes and also generates fine-grained sub-labels enabling comprehensive understanding of emerging trends and key narratives. By automating the newsletter creation process, Newsletter-Factory alleviates the pain and cost of creating enterprise newsletters targeted towards business users and employees."
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome to My Research Blog",
     "section": "",
-    "text": "No matching items"
+    "text": "Welcome to my personal research blog! I’m Siddharth Tumre, a researcher at TCS Research, where my research focuses on applying Natural Language Processing (NLP) and Large Language Models (LLMs) for real-world applications.\nThis space will serve as a platform to:\n\n📚 Share insights and updates from my research\n🛠️ Discuss technical approaches, challenges, and experiments\n🔎 Reflect on trends in NLP, LLMs, and their applications\n✍️ Post tutorials, demos, and thoughts.\n\nIf you’re interested in applied AI, language models, or how to make cutting-edge NLP work for real-world domains, you’re in the right place.\n\nThanks for stopping by!\nFeel free to connect with me on Linkedin or Twitter."
   },
   {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Siddharth Tumre",
     "section": "",
-    "text": "Home\n    Publications"
-  },
-  {
-    "objectID": "publications.html#archival-conference-papers",
-    "href": "publications.html#archival-conference-papers",
-    "title": "Publications",
-    "section": "Archival Conference Papers",
-    "text": "Archival Conference Papers\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n      \n        Publication\n      \n      \n        Year\n      \n    \n  \n    \n      \n      \n    \n\n\n\n  \n    Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety\n    Siddharth Tumre, Sumit Koundanya, Shubham Kumbhar, Sangameshwar Patil\n    FLAIRS\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n  \n    Benchmarking Near-Duplicate Detection in the era of Pay-walled News\n    Alok Kumar, Siddharth Tumre, Sangameshwar Patil\n    WWW\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n  \n\n  \n    Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds\n    Siddharth Tumre, Sangameshwar Patil, Alok Kumar\n    NAACL\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n  \n    Newsletter-Factory: A Thematic Newsletter Generation Tool for Curating Business Insights\n    Siddharth Tumre, Alok Kumar, Ajay Phade, Nihar Riswadkar and Sangameshwar Patil\n    Text2Story\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "publications.html#non-archival-posters-workshop-papers",
-    "href": "publications.html#non-archival-posters-workshop-papers",
-    "title": "Publications",
-    "section": "Non-Archival Posters & Workshop Papers",
-    "text": "Non-Archival Posters & Workshop Papers\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n      \n        Publication\n      \n      \n        Year\n      \n    \n  \n    \n      \n      \n    \n\n\n\n  \n    Employing Open-Source LLMs for Preventive Action Recommendations to Avoid Industrial Safety Incidents\n    Shubham Kumbhar, Siddharth Tumre, Sumit Koundanya, Sangameshwar Patil\n    Workshop on Open-Source AI for Mainstream Use, AAAI\n    (2025)\n    \n      Details\n    \n    \n    \n  \n\n  \n    LLM-as-a-Judge: Evaluating LLM Recommendations for Industrial Safety\n    Sumit Koundanya, Shubham Kumbhar, Siddharth Tumre, Sangameshwar Patil\n    LLM4Eval @ WSDM\n    (2025)\n    \n      Details\n    \n    \n    \n  \n\n\n\nNo matching items"
+    "text": "Hi! I’m Siddharth. Here you can find a lot of content about NLP, LLMs, AI, Multimodality and other things I’m interested in.\nFeel free to get in touch!\n👨🏻‍💻 about\n📝 blog posts\n📚 publications"
   },
   {
     "objectID": "about.html",
@@ -105,11 +91,32 @@
     "text": "TCS Research (TRDDC) | Researcher | September 2023 - present"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Siddharth Tumre",
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
     "section": "",
-    "text": "Hi! I’m Siddharth. Here you can find a lot of content about NLP, LLMs, AI, Multimodality and other things I’m interested in.\nFeel free to get in touch!\n👨🏻‍💻 about\n📝 blog posts\n📚 publications"
+    "text": "Home\n    Publications"
+  },
+  {
+    "objectID": "publications.html#archival-conference-papers",
+    "href": "publications.html#archival-conference-papers",
+    "title": "Publications",
+    "section": "Archival Conference Papers",
+    "text": "Archival Conference Papers\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n      \n        Publication\n      \n      \n        Year\n      \n    \n  \n    \n      \n      \n    \n\n\n\n  \n    Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety\n    Siddharth Tumre, Sumit Koundanya, Shubham Kumbhar, Sangameshwar Patil\n    FLAIRS\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n  \n    Benchmarking Near-Duplicate Detection in the era of Pay-walled News\n    Alok Kumar, Siddharth Tumre, Sangameshwar Patil\n    WWW\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n  \n\n  \n    Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds\n    Siddharth Tumre, Sangameshwar Patil, Alok Kumar\n    NAACL\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n  \n    Newsletter-Factory: A Thematic Newsletter Generation Tool for Curating Business Insights\n    Siddharth Tumre, Alok Kumar, Ajay Phade, Nihar Riswadkar and Sangameshwar Patil\n    Text2Story\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications.html#non-archival-posters-workshop-papers",
+    "href": "publications.html#non-archival-posters-workshop-papers",
+    "title": "Publications",
+    "section": "Non-Archival Posters & Workshop Papers",
+    "text": "Non-Archival Posters & Workshop Papers\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n      \n        Publication\n      \n      \n        Year\n      \n    \n  \n    \n      \n      \n    \n\n\n\n  \n    Employing Open-Source LLMs for Preventive Action Recommendations to Avoid Industrial Safety Incidents\n    Shubham Kumbhar, Siddharth Tumre, Sumit Koundanya, Sangameshwar Patil\n    Workshop on Open-Source AI for Mainstream Use, AAAI\n    (2025)\n    \n      Details\n    \n    \n    \n  \n\n  \n    LLM-as-a-Judge: Evaluating LLM Recommendations for Industrial Safety\n    Sumit Koundanya, Shubham Kumbhar, Siddharth Tumre, Sangameshwar Patil\n    LLM4Eval @ WSDM\n    (2025)\n    \n      Details\n    \n    \n    \n  \n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Welcome to My Research Blog\n\n\n\nintroduction\n\nblog\n\n\n\n\n\n\n\n\n\nMay 19, 2025\n\n\nSiddharth Tumre\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "publications/archival/tumre2025ndd.html",
