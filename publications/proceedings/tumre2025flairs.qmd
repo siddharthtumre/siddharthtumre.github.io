@@ -10,6 +10,7 @@ toc: false
 categories:
   - Industrial Safety
   - Large Language Models
+  - Archival Conference Papers
 ---
 
 ## Citation (APA)

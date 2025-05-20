@@ -10,6 +10,7 @@ toc: false
 categories:
   - Near-Duplicate Detection
   - News Analytics
+  - Archival Conference Papers
 ---
 
 ## Citation (APA)
