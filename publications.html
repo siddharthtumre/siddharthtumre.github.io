@@ -72,20 +72,48 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-articles .list');
+    const listingTargetEl = window.document.querySelector('#listing-archival .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-execute','listing-comments','listing-language','listing-title','listing-type','listing-author','listing-year','listing-publication','listing-toc','listing-categories','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-link','listing-pdf',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-execute','listing-comments','listing-language','listing-title','listing-type','listing-author','listing-year','listing-publication','listing-link','listing-toc','listing-categories','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-pdf',{ data: ['index'] },{ data: ['categories'] }],
       
       searchColumns: ["listing-title","listing-author","listing-publication","listing-year"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-articles'] = new List('listing-articles', options);
+    window['quarto-listings']['listing-archival'] = new List('listing-archival', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-non-archival .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-format','listing-execute','listing-comments','listing-language','listing-title','listing-type','listing-author','listing-year','listing-publication','listing-toc','listing-categories','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-publication","listing-year"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-non-archival'] = new List('listing-non-archival', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -201,11 +229,27 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="QXJjaGl2YWwlMjBDb25mZXJlbmNlJTIwUGFwZXJz">Archival Conference Papers <span class="quarto-category-count">(4)</span></div><div class="category" data-category="RGF0YSUyMFJlc291cmNl">Data Resource <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW5kdXN0cmlhbCUyMFNhZmV0eQ==">Industrial Safety <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TGFyZ2UlMjBMYW5ndWFnZSUyME1vZGVscw==">Large Language Models <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TExNLWFzLWEtSnVkZ2U=">LLM-as-a-Judge <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TmVhci1EdXBsaWNhdGUlMjBEZXRlY3Rpb24=">Near-Duplicate Detection <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TmV3cyUyMEFuYWx5dGljcw==">News Analytics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TmV3c2xldHRlciUyMEdlbmVyYXRpb24=">Newsletter Generation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Tm9uLUFyY2hpdmFsJTIwUG9zdGVycyUyMCUyNiUyMFdvcmtzaG9wJTIwUGFwZXJz">Non-Archival Posters &amp; Workshop Papers <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="QXJjaGl2YWwlMjBDb25mZXJlbmNlJTIwUGFwZXJz">Archival Conference Papers <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RGF0YSUyMFJlc291cmNl">Data Resource <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW5kdXN0cmlhbCUyMFNhZmV0eQ==">Industrial Safety <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TGFyZ2UlMjBMYW5ndWFnZSUyME1vZGVscw==">Large Language Models <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TExNLWFzLWEtSnVkZ2U=">LLM-as-a-Judge <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TmVhci1EdXBsaWNhdGUlMjBEZXRlY3Rpb24=">Near-Duplicate Detection <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TmV3cyUyMEFuYWx5dGljcw==">News Analytics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TmV3c2xldHRlciUyMEdlbmVyYXRpb24=">Newsletter Generation <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Publications</h1>
+</div>
 
 
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <nav aria-label="breadcrumb">
@@ -214,11 +258,13 @@ window.Quarto = {
     <li class="breadcrumb-item active" aria-current="page">Publications</li>
   </ol>
 </nav>
-<div id="listing-articles" class="quarto-listing quarto-listing-container-custom">
+<section id="archival-conference-papers" class="level2">
+<h2 class="anchored" data-anchor-id="archival-conference-papers">Archival Conference Papers</h2>
+<div id="listing-archival" class="quarto-listing quarto-listing-container-custom">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-    <select id="listing-articles-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-articles'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+    <select id="listing-archival-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-archival'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
       <option value="listing-title" data-direction="asc">
@@ -242,12 +288,12 @@ window.Quarto = {
 </div>
 <ul class="pub-list list">
 
-  <li data-index="0" data-categories="SW5kdXN0cmlhbCUyMFNhZmV0eSUyQ0xhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHMlMkNBcmNoaXZhbCUyMENvbmZlcmVuY2UlMjBQYXBlcnM=" data-listing-file-modified-sort="1747714506969" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
+  <li data-index="0" data-categories="SW5kdXN0cmlhbCUyMFNhZmV0eSUyQ0xhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHM=" data-listing-file-modified-sort="1747716186525" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
     <span class="listing-title lead">Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety</span><br>
     <span class="listing-author">Siddharth Tumre, Sumit Koundanya, Shubham Kumbhar, Sangameshwar Patil</span><br>
     <span class="listing-publication fst-italic ">FLAIRS</span>
     <span class="listing-year">(2025)</span><br>
-    <a href="./publications/proceedings/tumre2025flairs.html" class="btn btn-outline-primary btn-sm">
+    <a href="./publications/archival/tumre2025flairs.html" class="btn btn-outline-primary btn-sm">
       Details
     </a>
     
@@ -262,12 +308,12 @@ window.Quarto = {
     
   </li>
 
-  <li data-index="1" data-categories="TmVhci1EdXBsaWNhdGUlMjBEZXRlY3Rpb24lMkNEYXRhJTIwUmVzb3VyY2UlMkNBcmNoaXZhbCUyMENvbmZlcmVuY2UlMjBQYXBlcnM=" data-listing-file-modified-sort="1747714506969" data-listing-reading-time-sort="2" data-listing-word-count-sort="270">
+  <li data-index="1" data-categories="TmVhci1EdXBsaWNhdGUlMjBEZXRlY3Rpb24lMkNEYXRhJTIwUmVzb3VyY2U=" data-listing-file-modified-sort="1747716186525" data-listing-reading-time-sort="2" data-listing-word-count-sort="270">
     <span class="listing-title lead">Benchmarking Near-Duplicate Detection in the era of Pay-walled News</span><br>
     <span class="listing-author">Alok Kumar, Siddharth Tumre, Sangameshwar Patil</span><br>
     <span class="listing-publication fst-italic ">WWW</span>
     <span class="listing-year">(2025)</span><br>
-    <a href="./publications/proceedings/alok2025www.html" class="btn btn-outline-primary btn-sm">
+    <a href="./publications/archival/alok2025www.html" class="btn btn-outline-primary btn-sm">
       Details
     </a>
     
@@ -278,24 +324,12 @@ window.Quarto = {
     
   </li>
 
-  <li data-index="2" data-categories="SW5kdXN0cmlhbCUyMFNhZmV0eSUyQ0xhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHMlMkNOb24tQXJjaGl2YWwlMjBQb3N0ZXJzJTIwJTI2JTIwV29ya3Nob3AlMjBQYXBlcnM=" data-listing-file-modified-sort="1747714506969" data-listing-reading-time-sort="1" data-listing-word-count-sort="198">
-    <span class="listing-title lead">Employing Open-Source LLMs for Preventive Action Recommendations to Avoid Industrial Safety Incidents</span><br>
-    <span class="listing-author">Shubham Kumbhar, Siddharth Tumre, Sumit Koundanya, Sangameshwar Patil</span><br>
-    <span class="listing-publication fst-italic ">Workshop on Open-Source AI for Mainstream Use, AAAI</span>
-    <span class="listing-year">(2025)</span><br>
-    <a href="./publications/non-archival/shubham2025aaai.html" class="btn btn-outline-primary btn-sm">
-      Details
-    </a>
-    
-    
-  </li>
-
-  <li data-index="3" data-categories="TmVhci1EdXBsaWNhdGUlMjBEZXRlY3Rpb24lMkNOZXdzJTIwQW5hbHl0aWNzJTJDQXJjaGl2YWwlMjBDb25mZXJlbmNlJTIwUGFwZXJz" data-listing-file-modified-sort="1747714506970" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
+  <li data-index="2" data-categories="TmVhci1EdXBsaWNhdGUlMjBEZXRlY3Rpb24lMkNOZXdzJTIwQW5hbHl0aWNzJTJDQXJjaGl2YWwlMjBDb25mZXJlbmNlJTIwUGFwZXJz" data-listing-file-modified-sort="1747716186525" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
     <span class="listing-title lead">Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds</span><br>
     <span class="listing-author">Siddharth Tumre, Sangameshwar Patil, Alok Kumar</span><br>
     <span class="listing-publication fst-italic ">NAACL</span>
     <span class="listing-year">(2025)</span><br>
-    <a href="./publications/proceedings/tumre2025ndd.html" class="btn btn-outline-primary btn-sm">
+    <a href="./publications/archival/tumre2025ndd.html" class="btn btn-outline-primary btn-sm">
       Details
     </a>
     
@@ -310,24 +344,12 @@ window.Quarto = {
     
   </li>
 
-  <li data-index="4" data-categories="SW5kdXN0cmlhbCUyMFNhZmV0eSUyQ0xhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHMlMkNMTE0tYXMtYS1KdWRnZSUyQ05vbi1BcmNoaXZhbCUyMFBvc3RlcnMlMjAlMjYlMjBXb3Jrc2hvcCUyMFBhcGVycw==" data-listing-file-modified-sort="1747714506969" data-listing-reading-time-sort="2" data-listing-word-count-sort="209">
-    <span class="listing-title lead">LLM-as-a-Judge: Evaluating LLM Recommendations for Industrial Safety</span><br>
-    <span class="listing-author">Sumit Koundanya, Shubham Kumbhar, Siddharth Tumre, Sangameshwar Patil</span><br>
-    <span class="listing-publication fst-italic ">LLM4Eval @ WSDM</span>
-    <span class="listing-year">(2025)</span><br>
-    <a href="./publications/non-archival/sumit2025llm4eval.html" class="btn btn-outline-primary btn-sm">
-      Details
-    </a>
-    
-    
-  </li>
-
-  <li data-index="5" data-categories="TmV3c2xldHRlciUyMEdlbmVyYXRpb24lMkNOZXdzJTIwQW5hbHl0aWNzJTJDQXJjaGl2YWwlMjBDb25mZXJlbmNlJTIwUGFwZXJz" data-listing-file-modified-sort="1747714506970" data-listing-reading-time-sort="2" data-listing-word-count-sort="234">
+  <li data-index="3" data-categories="TmV3c2xldHRlciUyMEdlbmVyYXRpb24lMkNOZXdzJTIwQW5hbHl0aWNzJTJDQXJjaGl2YWwlMjBDb25mZXJlbmNlJTIwUGFwZXJz" data-listing-file-modified-sort="1747716186525" data-listing-reading-time-sort="2" data-listing-word-count-sort="234">
     <span class="listing-title lead">Newsletter-Factory: A Thematic Newsletter Generation Tool for Curating Business Insights</span><br>
     <span class="listing-author">Siddharth Tumre, Alok Kumar, Ajay Phade, Nihar Riswadkar and Sangameshwar Patil</span><br>
     <span class="listing-publication fst-italic ">Text2Story</span>
     <span class="listing-year">(2025)</span><br>
-    <a href="./publications/proceedings/tumre2025newletter.html" class="btn btn-outline-primary btn-sm">
+    <a href="./publications/archival/tumre2025newletter.html" class="btn btn-outline-primary btn-sm">
       Details
     </a>
     
@@ -346,9 +368,69 @@ window.Quarto = {
 
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
+</section>
+<section id="non-archival-posters-workshop-papers" class="level2">
+<h2 class="anchored" data-anchor-id="non-archival-posters-workshop-papers">Non-Archival Posters &amp; Workshop Papers</h2>
+<div id="listing-non-archival" class="quarto-listing quarto-listing-container-custom">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-non-archival-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-non-archival'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title" data-direction="asc">
+        Title
+      </option>
+      <option value="listing-author" data-direction="asc">
+        Author
+      </option>
+      <option value="listing-publication" data-direction="asc">
+        Publication
+      </option>
+      <option value="listing-year" data-direction="asc">
+        Year
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<ul class="pub-list list">
+
+  <li data-index="0" data-categories="SW5kdXN0cmlhbCUyMFNhZmV0eSUyQ0xhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHM=" data-listing-file-modified-sort="1747716186525" data-listing-reading-time-sort="1" data-listing-word-count-sort="198">
+    <span class="listing-title lead">Employing Open-Source LLMs for Preventive Action Recommendations to Avoid Industrial Safety Incidents</span><br>
+    <span class="listing-author">Shubham Kumbhar, Siddharth Tumre, Sumit Koundanya, Sangameshwar Patil</span><br>
+    <span class="listing-publication fst-italic ">Workshop on Open-Source AI for Mainstream Use, AAAI</span>
+    <span class="listing-year">(2025)</span><br>
+    <a href="./publications/non-archival/shubham2025aaai.html" class="btn btn-outline-primary btn-sm">
+      Details
+    </a>
+    
+    
+  </li>
+
+  <li data-index="1" data-categories="SW5kdXN0cmlhbCUyMFNhZmV0eSUyQ0xhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHMlMkNMTE0tYXMtYS1KdWRnZQ==" data-listing-file-modified-sort="1747716186525" data-listing-reading-time-sort="2" data-listing-word-count-sort="209">
+    <span class="listing-title lead">LLM-as-a-Judge: Evaluating LLM Recommendations for Industrial Safety</span><br>
+    <span class="listing-author">Sumit Koundanya, Shubham Kumbhar, Siddharth Tumre, Sangameshwar Patil</span><br>
+    <span class="listing-publication fst-italic ">LLM4Eval @ WSDM</span>
+    <span class="listing-year">(2025)</span><br>
+    <a href="./publications/non-archival/sumit2025llm4eval.html" class="btn btn-outline-primary btn-sm">
+      Details
+    </a>
+    
+    
+  </li>
+
+</ul>
+
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
