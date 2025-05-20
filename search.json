@@ -14,43 +14,43 @@
     "text": "Rapid evolution of Large Language Models (LLMs) has revolutionized many industrial applications. However, proprietary LLMs often come with constraints such as restrictions on customizability, high cost and privacy of sensitive data, which make them less viable for industrial applications. Open-source LLMs, on the other hand, provide an accessible and flexible alternative which can enable industries to adapt models to domain-specific needs without such restrictions. This flexibility is especially crucial for manufacturing, chemical processes, construction, energy etc.\nIn this paper, we evaluate and benchmark the feasibility of using Falcon LLM, an open-source model for the task of generating preventive recommendations to improve industrial safety. Based on domain expert evaluation, we find that the standard, pre-trained Falcon LLM has limitations concerning the quality and quantity of recommendations generated. They can be of diverse quality, such as, specific, generic, or irrelevant. We show that the quantity, output format as well as domain-awareness of the model can be significantly improved using supervised fine-tuning (SFT) with a small amount of labeled data that illustrates the expected output. The quality of recommendations also improves after the fine-tuning; however, there are still many areas of improvement for this task, which we point to in this paper."
   },
   {
-    "objectID": "publications/archival/tumre2025flairs.html",
-    "href": "publications/archival/tumre2025flairs.html",
+    "objectID": "publications/proceedings/tumre2025flairs.html",
+    "href": "publications/proceedings/tumre2025flairs.html",
     "title": "Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety",
     "section": "",
     "text": "Tumre, S., Koundanya, S., Kumbhar, S., & Patil, S. (2025). Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety. The International FLAIRS Conference Proceedings, 38(1). https://doi.org/10.32473/flairs.38.1.138959"
   },
   {
-    "objectID": "publications/archival/tumre2025flairs.html#citation-apa",
-    "href": "publications/archival/tumre2025flairs.html#citation-apa",
+    "objectID": "publications/proceedings/tumre2025flairs.html#citation-apa",
+    "href": "publications/proceedings/tumre2025flairs.html#citation-apa",
     "title": "Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety",
     "section": "",
     "text": "Tumre, S., Koundanya, S., Kumbhar, S., & Patil, S. (2025). Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety. The International FLAIRS Conference Proceedings, 38(1). https://doi.org/10.32473/flairs.38.1.138959"
   },
   {
-    "objectID": "publications/archival/tumre2025flairs.html#abstract",
-    "href": "publications/archival/tumre2025flairs.html#abstract",
+    "objectID": "publications/proceedings/tumre2025flairs.html#abstract",
+    "href": "publications/proceedings/tumre2025flairs.html#abstract",
     "title": "Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety",
     "section": "Abstract",
     "text": "Abstract\nImproving industrial safety using NLP technologies supports the triple bottom line of environmental, social and economic sustainability. Rapid evolution of Large Language Models (LLMs) has potential to transform the industrial safety and improve disaster mitigation. In this paper, we evaluate and benchmark the feasibility of using Falcon and Phi3 open-source LLMs for the task of generating preventive recommendations to improve industrial safety. Based on domain expert evaluation, we find that the standard, pre-trained LLMs have limitations concerning the quality and quantity of recommendations generated. They can be of diverse quality, such as specific, generic, or irrelevant. We find that the pre-trained version of Phi3 is better than base version of Falcon for the proposed task. We show that the quantity, output format as well as domain-awareness of the Falcon can be significantly improved using supervised fine-tuning (SFT) with a small amount of labeled data that illustrates the expected output. In spite of the quality improvement post-SFT and the high societal and economic impact of the application, there are still many areas of improvement, which we point to as part of future work. To the best of our knowledge, this is the first attempt to align LLMs for industrial safety recommendation improvement."
   },
   {
-    "objectID": "publications/archival/tumre2025newletter.html",
-    "href": "publications/archival/tumre2025newletter.html",
+    "objectID": "publications/proceedings/tumre2025newletter.html",
+    "href": "publications/proceedings/tumre2025newletter.html",
     "title": "Newsletter-Factory: A Thematic Newsletter Generation Tool for Curating Business Insights",
     "section": "",
     "text": "Tumre, S., Kumar, A., Phade, A., Riswadkar, N., & Patil, S. (2025). Newsletter-Factory: A Thematic Newsletter Generation Tool for Curating Business Insights."
   },
   {
-    "objectID": "publications/archival/tumre2025newletter.html#citation-apa",
-    "href": "publications/archival/tumre2025newletter.html#citation-apa",
+    "objectID": "publications/proceedings/tumre2025newletter.html#citation-apa",
+    "href": "publications/proceedings/tumre2025newletter.html#citation-apa",
     "title": "Newsletter-Factory: A Thematic Newsletter Generation Tool for Curating Business Insights",
     "section": "",
     "text": "Tumre, S., Kumar, A., Phade, A., Riswadkar, N., & Patil, S. (2025). Newsletter-Factory: A Thematic Newsletter Generation Tool for Curating Business Insights."
   },
   {
-    "objectID": "publications/archival/tumre2025newletter.html#abstract",
-    "href": "publications/archival/tumre2025newletter.html#abstract",
+    "objectID": "publications/proceedings/tumre2025newletter.html#abstract",
+    "href": "publications/proceedings/tumre2025newletter.html#abstract",
     "title": "Newsletter-Factory: A Thematic Newsletter Generation Tool for Curating Business Insights",
     "section": "Abstract",
     "text": "Abstract\nKeeping track of the evolving business and technology landscape is essential for enterprises to remain relevant, competitive, and successful in today’s dynamic marketplace. Gaining insights into how business narratives unfold is crucial for strategic decision-making, risk assessment, and market analysis. For enterprise executives, filtering through vast amounts of news content to identify what is relevant and useful can be extremely time-consuming as well as act as a distraction from other core tasks for their role. Newsletters provide a solution by curating the most relevant information, reducing information overload, and delivering value to targeted readers. Creating periodic newsletters that deliver value to the target audience and achieve business objectives require a combination of domain knowledge, business expertise, and technology awareness across various disciplines–making it an effort-intensive and expensive proposition for enterprises. In this paper, we demonstrate Newsletter-Factory, a tool that can create thematic and customizable newsletters based on enterprise requirements. It efficiently processes huge amounts of data from multiple sources and leverages near-duplicate detection techniques to eliminate redundancy. The tool categorizes news articles into high-level themes and also generates fine-grained sub-labels enabling comprehensive understanding of emerging trends and key narratives. By automating the newsletter creation process, Newsletter-Factory alleviates the pain and cost of creating enterprise newsletters targeted towards business users and employees."
@@ -65,23 +65,9 @@
   {
     "objectID": "publications.html",
     "href": "publications.html",
-    "title": "Publications",
+    "title": "siddharth.tumre",
     "section": "",
-    "text": "Home\n    Publications"
-  },
-  {
-    "objectID": "publications.html#archival-conference-papers",
-    "href": "publications.html#archival-conference-papers",
-    "title": "Publications",
-    "section": "Archival Conference Papers",
-    "text": "Archival Conference Papers\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n      \n        Publication\n      \n      \n        Year\n      \n    \n  \n    \n      \n      \n    \n\n\n\n  \n    Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety\n    Siddharth Tumre, Sumit Koundanya, Shubham Kumbhar, Sangameshwar Patil\n    FLAIRS\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n  \n    Benchmarking Near-Duplicate Detection in the era of Pay-walled News\n    Alok Kumar, Siddharth Tumre, Sangameshwar Patil\n    WWW\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n  \n\n  \n    Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds\n    Siddharth Tumre, Sangameshwar Patil, Alok Kumar\n    NAACL\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n  \n    Newsletter-Factory: A Thematic Newsletter Generation Tool for Curating Business Insights\n    Siddharth Tumre, Alok Kumar, Ajay Phade, Nihar Riswadkar and Sangameshwar Patil\n    Text2Story\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "publications.html#non-archival-posters-workshop-papers",
-    "href": "publications.html#non-archival-posters-workshop-papers",
-    "title": "Publications",
-    "section": "Non-Archival Posters & Workshop Papers",
-    "text": "Non-Archival Posters & Workshop Papers\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n      \n        Publication\n      \n      \n        Year\n      \n    \n  \n    \n      \n      \n    \n\n\n\n  \n    Employing Open-Source LLMs for Preventive Action Recommendations to Avoid Industrial Safety Incidents\n    Shubham Kumbhar, Siddharth Tumre, Sumit Koundanya, Sangameshwar Patil\n    Workshop on Open-Source AI for Mainstream Use, AAAI\n    (2025)\n    \n      Details\n    \n    \n    \n  \n\n  \n    LLM-as-a-Judge: Evaluating LLM Recommendations for Industrial Safety\n    Sumit Koundanya, Shubham Kumbhar, Siddharth Tumre, Sangameshwar Patil\n    LLM4Eval @ WSDM\n    (2025)\n    \n      Details\n    \n    \n    \n  \n\n\n\nNo matching items"
+    "text": "Home\n    Publications\n  \n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n      \n        Publication\n      \n      \n        Year\n      \n    \n  \n    \n      \n      \n    \n\n\n\n  \n    Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety\n    Siddharth Tumre, Sumit Koundanya, Shubham Kumbhar, Sangameshwar Patil\n    FLAIRS\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n  \n    Benchmarking Near-Duplicate Detection in the era of Pay-walled News\n    Alok Kumar, Siddharth Tumre, Sangameshwar Patil\n    WWW\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n  \n\n  \n    Employing Open-Source LLMs for Preventive Action Recommendations to Avoid Industrial Safety Incidents\n    Shubham Kumbhar, Siddharth Tumre, Sumit Koundanya, Sangameshwar Patil\n    Workshop on Open-Source AI for Mainstream Use, AAAI\n    (2025)\n    \n      Details\n    \n    \n    \n  \n\n  \n    Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds\n    Siddharth Tumre, Sangameshwar Patil, Alok Kumar\n    NAACL\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n  \n    LLM-as-a-Judge: Evaluating LLM Recommendations for Industrial Safety\n    Sumit Koundanya, Shubham Kumbhar, Siddharth Tumre, Sangameshwar Patil\n    LLM4Eval @ WSDM\n    (2025)\n    \n      Details\n    \n    \n    \n  \n\n  \n    Newsletter-Factory: A Thematic Newsletter Generation Tool for Curating Business Insights\n    Siddharth Tumre, Alok Kumar, Ajay Phade, Nihar Riswadkar and Sangameshwar Patil\n    Text2Story\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -112,43 +98,43 @@
     "text": "Hi! I’m Siddharth. Here you can find a lot of content about NLP, LLMs, AI, Multimodality and other things I’m interested in.\nFeel free to get in touch!\n👨🏻‍💻 about\n📝 blog posts\n📚 publications"
   },
   {
-    "objectID": "publications/archival/tumre2025ndd.html",
-    "href": "publications/archival/tumre2025ndd.html",
+    "objectID": "publications/proceedings/tumre2025ndd.html",
+    "href": "publications/proceedings/tumre2025ndd.html",
     "title": "Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds",
     "section": "",
     "text": "Tumre, S., Patil, S., & Kumar, A. (2025, April). Improved near-duplicate detection for aggregated and paywalled news-feeds. In Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 3: Industry Track) (pp. 979-987)."
   },
   {
-    "objectID": "publications/archival/tumre2025ndd.html#citation-apa",
-    "href": "publications/archival/tumre2025ndd.html#citation-apa",
+    "objectID": "publications/proceedings/tumre2025ndd.html#citation-apa",
+    "href": "publications/proceedings/tumre2025ndd.html#citation-apa",
     "title": "Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds",
     "section": "",
     "text": "Tumre, S., Patil, S., & Kumar, A. (2025, April). Improved near-duplicate detection for aggregated and paywalled news-feeds. In Proceedings of the 2025 Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 3: Industry Track) (pp. 979-987)."
   },
   {
-    "objectID": "publications/archival/tumre2025ndd.html#abstract",
-    "href": "publications/archival/tumre2025ndd.html#abstract",
+    "objectID": "publications/proceedings/tumre2025ndd.html#abstract",
+    "href": "publications/proceedings/tumre2025ndd.html#abstract",
     "title": "Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds",
     "section": "Abstract",
     "text": "Abstract\nNews aggregators play a key role in the rapidly evolving digital landscape by providing comprehensive and timely news stories aggregated from diverse sources into one feed. As these articles are sourced from different outlets, they often end up covering the same underlying event but differ in phrasing, formatting or supplemented with additional details. It is crucial for the news aggregators to identify these near-duplicates, improving the content quality and user engagement by steering away from redundant information. The problem of near-duplicate news detection has become harder with increasing use of paywalls by the news websites resulting in restricted access to the content. It is now common to get only the headline and a short snippet from the article. Previous works have concentrated on full length versions of documents such as webpages. There is very little work that focuses on this variation of the near-duplicate detection problem in which only headline and a small text blurb is available for each news article. We propose Near-Duplicate Detection Using Metadata Augmented Communities (NDD-MAC) approach that combines embeddings from pretrained language model (PLM) and latent metadata of a news article followed by community detection to identify clusters of near-duplicates. We show the efficacy of proposed approach using 2 different real-world datasets. By integrating metadata with community detection, NDD-MAC is able to detect nuanced similarities and differences in news snippets and offers an industrial scale solution for the near-duplicate detection in scenarios with restricted content availability."
   },
   {
-    "objectID": "publications/archival/alok2025www.html",
-    "href": "publications/archival/alok2025www.html",
+    "objectID": "publications/proceedings/alok2025www.html",
+    "href": "publications/proceedings/alok2025www.html",
     "title": "Benchmarking Near-Duplicate Detection in the era of Pay-walled News",
     "section": "",
     "text": "Kumar, A., Patil, S., & Tumre, S. (2025). Benchmarking Near-Duplicate Detection in the era of Pay-walled News. In Companion Proceedings of the ACM Web Conference 2025 (WWW ’25). Association for Computing Machinery, New York, NY, USA. https://doi.org/10.1145/3701716.3715303."
   },
   {
-    "objectID": "publications/archival/alok2025www.html#citation-apa",
-    "href": "publications/archival/alok2025www.html#citation-apa",
+    "objectID": "publications/proceedings/alok2025www.html#citation-apa",
+    "href": "publications/proceedings/alok2025www.html#citation-apa",
     "title": "Benchmarking Near-Duplicate Detection in the era of Pay-walled News",
     "section": "",
     "text": "Kumar, A., Patil, S., & Tumre, S. (2025). Benchmarking Near-Duplicate Detection in the era of Pay-walled News. In Companion Proceedings of the ACM Web Conference 2025 (WWW ’25). Association for Computing Machinery, New York, NY, USA. https://doi.org/10.1145/3701716.3715303."
   },
   {
-    "objectID": "publications/archival/alok2025www.html#abstract",
-    "href": "publications/archival/alok2025www.html#abstract",
+    "objectID": "publications/proceedings/alok2025www.html#abstract",
+    "href": "publications/proceedings/alok2025www.html#abstract",
     "title": "Benchmarking Near-Duplicate Detection in the era of Pay-walled News",
     "section": "Abstract",
     "text": "Abstract\nRedundancy and access restriction due to paywalls are emerging as key challenges faced by web-enabled digital news ecosystem. Over the past few years, newspapers and other news sources have increasingly put-up subscription-based paywalls for accessing their content. Further, copyright, and other legal issues have curtailed the amount of text content that can be freely shared in a news feed. Well-known near-duplicate detection algorithms such as Locality Sensitive Hashing (LSH) and its variants have been used on full length versions of documents such as webpages and news articles. So, unlike traditional input of full text articles, we now get access to significantly less quantity of text available as input. This has added to the challenges and complexities to be tackled by the near-duplicate detection algorithms. There are few, if any, gold-standard datasets available for this variation of the news duplicate detection problem. In this paper, we present NDD-NS, a dataset of business news snippets which have been annotated with near-duplicates. These news snippets are representative of challenges in the content received in the news feed nowadays. Further, we benchmark the Minhash-LSH, Simhash and sentence transformer based neural approaches. We observe that hashing based LSH approaches achieve significantly less accuracy than what it achieved on the SpotSigs dataset. This highlights the challenging nature of the NDD-NS dataset. We believe this dataset will pave way for novel approaches and further research for near-duplicate detection task."

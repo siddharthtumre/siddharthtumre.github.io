@@ -6,12 +6,12 @@
   {
     "listing": "/publications.html",
     "items": [
-      "/publications/archival/tumre2025flairs.html",
-      "/publications/archival/alok2025www.html",
-      "/publications/archival/tumre2025ndd.html",
-      "/publications/archival/tumre2025newletter.html",
+      "/publications/proceedings/tumre2025flairs.html",
+      "/publications/proceedings/alok2025www.html",
       "/publications/non-archival/shubham2025aaai.html",
-      "/publications/non-archival/sumit2025llm4eval.html"
+      "/publications/proceedings/tumre2025ndd.html",
+      "/publications/non-archival/sumit2025llm4eval.html",
+      "/publications/proceedings/tumre2025newletter.html"
     ]
   }
 ]
