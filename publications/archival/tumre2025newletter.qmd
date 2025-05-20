@@ -10,7 +10,6 @@ toc: false
 categories:
   - Newsletter Generation
   - News Analytics
-  - Archival Conference Papers
 ---
 
 ## Citation (APA)
