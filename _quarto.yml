@@ -6,6 +6,8 @@ project:
 
 website:
   title: "siddharth.tumre"
+  site-url: http://siddharthtumre.github.io
+  description: "Personal blog on research, insights, and applications of NLP and Large Language Models."
   navbar:
     right:
       - href: publications.qmd
@@ -24,6 +26,9 @@ website:
           - icon: github
             text: GitHub
             href: https://github.com/siddharthtumre
+          - icon: linkedin
+            text: LinkedIn
+            href: https://www.linkedin.com/in/siddharth-tumre/
           - icon: twitter
             text: Twitter
             href: https://x.com/siddharth_tumre
@@ -39,6 +44,8 @@ website:
         href: https://github.com/siddharthtumre
       - icon: linkedin
         href: https://www.linkedin.com/in/siddharth-tumre/
+      - icon: twitter
+        href: https://x.com/siddharth_tumre
 format:
   html:
     smooth-scroll: true
