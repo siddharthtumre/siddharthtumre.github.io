@@ -34,7 +34,7 @@ website:
             href: https://x.com/siddharth_tumre
           - icon: rss
             text: RSS Feed
-            href: index.xml
+            href: blog.xml
   page-footer:
     left: "Website made with [Quarto](https://quarto.org/), by Siddharth Tumre."
     right:
