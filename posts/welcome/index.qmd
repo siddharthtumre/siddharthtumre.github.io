@@ -9,6 +9,16 @@ format:
     code-fold: false
 ---
 
+```{=html}
+<div style="text-align: center;">
+  <img src="image.jpg" alt="An image from Unsplash" width=100% />
+  <br>
+  <span style="font-size: 0.9em; color: gray; font-style: italic;">
+    Source: <a href="https://unsplash.com/" target="_blank" rel="noopener">Unsplash</a>
+  </span>
+</div>
+```
+
 Welcome to my personal research blog! I'm **Siddharth Tumre**, a researcher at [TCS Research](https://www.tcs.com/what-we-do/research), where my research focuses on applying **Natural Language Processing (NLP)** and **Large Language Models (LLMs)** for real-world applications.
 
 This space will serve as a platform to:
