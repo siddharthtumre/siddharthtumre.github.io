@@ -10,7 +10,11 @@ about:
 comments: false
 ---
 
-Hi! I'm Siddharth. Here you can find a lot of content about NLP, LLMs, AI, Multimodality and other things I'm interested in.
+<div class="intro-box">
+Hi! I'm **Siddharth**. I am curious about and have worked in the areas of **Machine Learning, Natural Language Processing, and Large Language Models**. I am curious about both the theoretical foundations and practical applications. In my free time, I love reading books, watching movies, and occasionally playing badminton.
+</div>
+
+<br>
 
 Feel free to [get in touch](mailto:%20siddharth.tumre@outlook.com)!
 

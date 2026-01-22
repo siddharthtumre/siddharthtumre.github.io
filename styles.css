@@ -1,1 +1,10 @@
 /* css styles */
+
+.intro-box {
+  max-width: 600px;
+  font-size: 1.1rem;
+}
+
+figcaption {
+  text-align: center;
+}
