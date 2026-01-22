@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-dde8d7229bfee0f8bb5efd37f0f9ae1e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -142,7 +143,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -293,7 +294,7 @@ window.Quarto = {
 </div>
 <ul class="pub-list list">
 
-  <li data-index="0" data-categories="SW5kdXN0cmlhbCUyMFNhZmV0eSUyQ0xhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHM=" data-listing-file-modified-sort="1748256278438" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
+  <li data-index="0" data-categories="SW5kdXN0cmlhbCUyMFNhZmV0eSUyQ0xhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHM=" data-listing-file-modified-sort="1769077258789" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
     <span class="listing-title lead">Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety</span><br>
     <span class="listing-author">Siddharth Tumre, Sumit Koundanya, Shubham Kumbhar, Sangameshwar Patil</span><br>
     <span class="listing-publication fst-italic ">FLAIRS</span>
@@ -313,7 +314,7 @@ window.Quarto = {
     
   </li>
 
-  <li data-index="1" data-categories="TmVhci1EdXBsaWNhdGUlMjBEZXRlY3Rpb24lMkNEYXRhJTIwUmVzb3VyY2U=" data-listing-file-modified-sort="1748256278438" data-listing-reading-time-sort="2" data-listing-word-count-sort="270">
+  <li data-index="1" data-categories="TmVhci1EdXBsaWNhdGUlMjBEZXRlY3Rpb24lMkNEYXRhJTIwUmVzb3VyY2U=" data-listing-file-modified-sort="1769077258789" data-listing-reading-time-sort="2" data-listing-word-count-sort="270">
     <span class="listing-title lead">Benchmarking Near-Duplicate Detection in the era of Pay-walled News</span><br>
     <span class="listing-author">Alok Kumar, Siddharth Tumre, Sangameshwar Patil</span><br>
     <span class="listing-publication fst-italic ">WWW</span>
@@ -333,7 +334,7 @@ window.Quarto = {
     
   </li>
 
-  <li data-index="2" data-categories="TmVhci1EdXBsaWNhdGUlMjBEZXRlY3Rpb24lMkNOZXdzJTIwQW5hbHl0aWNz" data-listing-file-modified-sort="1748256278438" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
+  <li data-index="2" data-categories="TmVhci1EdXBsaWNhdGUlMjBEZXRlY3Rpb24lMkNOZXdzJTIwQW5hbHl0aWNz" data-listing-file-modified-sort="1769077258789" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
     <span class="listing-title lead">Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds</span><br>
     <span class="listing-author">Siddharth Tumre, Sangameshwar Patil, Alok Kumar</span><br>
     <span class="listing-publication fst-italic ">NAACL</span>
@@ -353,7 +354,7 @@ window.Quarto = {
     
   </li>
 
-  <li data-index="3" data-categories="TmV3c2xldHRlciUyMEdlbmVyYXRpb24lMkNOZXdzJTIwQW5hbHl0aWNz" data-listing-file-modified-sort="1748256278438" data-listing-reading-time-sort="2" data-listing-word-count-sort="234">
+  <li data-index="3" data-categories="TmV3c2xldHRlciUyMEdlbmVyYXRpb24lMkNOZXdzJTIwQW5hbHl0aWNz" data-listing-file-modified-sort="1769077258789" data-listing-reading-time-sort="2" data-listing-word-count-sort="234">
     <span class="listing-title lead">Newsletter-Factory: A Thematic Newsletter Generation Tool for Curating Business Insights</span><br>
     <span class="listing-author">Siddharth Tumre, Alok Kumar, Ajay Phade, Nihar Riswadkar and Sangameshwar Patil</span><br>
     <span class="listing-publication fst-italic ">Text2Story</span>
@@ -408,7 +409,7 @@ window.Quarto = {
 </div>
 <ul class="pub-list list">
 
-  <li data-index="0" data-categories="SW5kdXN0cmlhbCUyMFNhZmV0eSUyQ0xhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHM=" data-listing-file-modified-sort="1748256278438" data-listing-reading-time-sort="1" data-listing-word-count-sort="198">
+  <li data-index="0" data-categories="SW5kdXN0cmlhbCUyMFNhZmV0eSUyQ0xhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHM=" data-listing-file-modified-sort="1769077258789" data-listing-reading-time-sort="1" data-listing-word-count-sort="198">
     <span class="listing-title lead">Employing Open-Source LLMs for Preventive Action Recommendations to Avoid Industrial Safety Incidents</span><br>
     <span class="listing-author">Shubham Kumbhar, Siddharth Tumre, Sumit Koundanya, Sangameshwar Patil</span><br>
     <span class="listing-publication fst-italic ">Workshop on Open-Source AI for Mainstream Use, AAAI</span>
@@ -420,7 +421,7 @@ window.Quarto = {
     
   </li>
 
-  <li data-index="1" data-categories="SW5kdXN0cmlhbCUyMFNhZmV0eSUyQ0xhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHMlMkNMTE0tYXMtYS1KdWRnZQ==" data-listing-file-modified-sort="1748256278438" data-listing-reading-time-sort="2" data-listing-word-count-sort="209">
+  <li data-index="1" data-categories="SW5kdXN0cmlhbCUyMFNhZmV0eSUyQ0xhcmdlJTIwTGFuZ3VhZ2UlMjBNb2RlbHMlMkNMTE0tYXMtYS1KdWRnZQ==" data-listing-file-modified-sort="1769077258789" data-listing-reading-time-sort="2" data-listing-word-count-sort="209">
     <span class="listing-title lead">LLM-as-a-Judge: Evaluating LLM Recommendations for Industrial Safety</span><br>
     <span class="listing-author">Sumit Koundanya, Shubham Kumbhar, Siddharth Tumre, Sangameshwar Patil</span><br>
     <span class="listing-publication fst-italic ">LLM4Eval @ WSDM</span>
@@ -493,13 +494,14 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
