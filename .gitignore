@@ -1,2 +1,5 @@
 /.quarto/
 /_site/
+.venv
+**/.ipynb_checkpoints
+**/.DS_Store
