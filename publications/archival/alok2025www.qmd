@@ -4,7 +4,8 @@ type: "proceeding"
 author: "Alok Kumar, Siddharth Tumre, Sangameshwar Patil"
 year: "2025"
 publication: "WWW"
-link: "https://doi.org/10.1145/3701716.3715303"
+link: "https://dl.acm.org/doi/abs/10.1145/3701716.3715303"
+pdf: "https://dl.acm.org/doi/pdf/10.1145/3701716.3715303"
 toc: false
 categories:
   - Near-Duplicate Detection
