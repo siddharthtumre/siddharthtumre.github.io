@@ -9,7 +9,195 @@
 <link>http://siddharthtumre.github.io/blog.html</link>
 <atom:link href="http://siddharthtumre.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Personal blog on research, insights, and applications of NLP and Large Language Models.</description>
-<generator>quarto-1.8.27</generator>
-<lastBuildDate>Thu, 22 Jan 2026 10:43:10 GMT</lastBuildDate>
+<generator>quarto-1.9.37</generator>
+<lastBuildDate>Sun, 12 Apr 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning</title>
+  <link>http://siddharthtumre.github.io/posts/HuBERT/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="http://siddharthtumre.github.io/posts/HuBERT/hubert_overview.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+</figure>
+</div>
+<p><em>Overview of the HuBERT architecture showing convolutional feature extraction, Transformer encoding, masking, and prediction of cluster-based acoustic targets.</em></p>
+<hr>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>HuBERT (Hidden-Unit BERT) is an <strong>encoder-only self-supervised speech representation model</strong> introduced by Hsu et al.&nbsp;(2021). It is inspired by the masked language modeling objective used in BERT but is designed specifically for <strong>raw speech signals</strong>.</p>
+<p>Instead of relying on textual supervision, HuBERT generates <strong>discrete pseudo-labels</strong> through an offline clustering process. This enables BERT-style pre-training directly on unlabeled speech data.</p>
+<p>The key idea behind HuBERT is simple yet powerful:</p>
+<blockquote class="blockquote">
+<p>Robust speech representations can be learned by predicting masked portions of an input sequence using contextual information.</p>
+</blockquote>
+<p>The model learns to encode unmasked acoustic inputs into meaningful latent representations while capturing <strong>long-range temporal dependencies</strong> needed to infer masked regions.</p>
+<p>HuBERT is released in multiple configurations:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Variant</th>
+<th>Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BASE</td>
+<td>~90M</td>
+</tr>
+<tr class="even">
+<td>LARGE</td>
+<td>~300M</td>
+</tr>
+<tr class="odd">
+<td>X-LARGE</td>
+<td>~1B</td>
+</tr>
+</tbody>
+</table>
+<p>These variants share the same architectural design but differ in depth and dimensionality.</p>
+<hr>
+</section>
+<section id="model-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="model-architecture">Model Architecture</h2>
+<p>Given a raw waveform input sampled at <strong>16 kHz</strong>, the signal is first processed using a stack of <strong>seven convolutional layers</strong>, each containing <strong>512 channels</strong>.</p>
+<p>These convolutional layers:</p>
+<ul>
+<li>Extract low-level spectral information<br>
+</li>
+<li>Downsample the temporal resolution<br>
+</li>
+<li>Produce approximately <strong>one frame every 20 ms</strong></li>
+</ul>
+<p>The resulting sequence of latent acoustic features is passed to a <strong>Transformer encoder</strong>, which models contextual dependencies across time and produces <strong>contextualized representations</strong> for each time step.</p>
+<section id="masking-strategy" class="level3">
+<h3 class="anchored" data-anchor-id="masking-strategy">Masking Strategy</h3>
+<p>During training:</p>
+<ul>
+<li><strong>8% of tokens</strong> are randomly masked<br>
+</li>
+<li>Masking is applied using <strong>span length = 10</strong></li>
+<li>The masked sequence is denoted as: <img src="https://latex.codecogs.com/png.latex?%5Ctilde%7BX%7D"></li>
+</ul>
+<p>The Transformer processes this partially observed sequence and generates representations for both <strong>masked</strong> and <strong>unmasked</strong> time steps.</p>
+<hr>
+</section>
+</section>
+<section id="pre-training-procedure" class="level2">
+<h2 class="anchored" data-anchor-id="pre-training-procedure">Pre-Training Procedure</h2>
+<p>Unlike supervised speech models that rely on phonetic labels, HuBERT generates <strong>training targets using unsupervised clustering</strong>.</p>
+<section id="step-1-initial-feature-extraction" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-initial-feature-extraction">Step 1: Initial Feature Extraction</h3>
+<p>The process begins by extracting:</p>
+<ul>
+<li><strong>39-dimensional MFCC features</strong>
+<ul>
+<li>13 static coefficients<br>
+</li>
+<li>First-order derivatives<br>
+</li>
+<li>Second-order derivatives</li>
+</ul></li>
+</ul>
+<p>These MFCC features capture spectral characteristics relevant for phonetic discrimination.</p>
+<p>Next:</p>
+<ul>
+<li><strong>k-means clustering</strong> is applied</li>
+<li><strong>100 clusters</strong> are created</li>
+<li>These clusters serve as <strong>pseudo-labels</strong></li>
+</ul>
+<hr>
+</section>
+<section id="step-2-iterative-target-refinement" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-iterative-target-refinement">Step 2: Iterative Target Refinement</h3>
+<p>To improve pseudo-label quality, HuBERT uses <strong>iterative refinement</strong>.</p>
+<p>Instead of MFCC features:</p>
+<ul>
+<li>Latent representations from the <strong>6th Transformer layer</strong> are used</li>
+<li>These representations are clustered into <strong>500 units</strong></li>
+<li>Only <strong>~10% of training data</strong> is sampled to reduce computational cost</li>
+</ul>
+<p>For larger models (LARGE and X-LARGE):</p>
+<ul>
+<li>Clustering is not restarted from MFCC features</li>
+<li>Instead, deeper-layer features from a previously trained HuBERT model are used</li>
+</ul>
+<p>This enables efficient scaling while maintaining high-quality pseudo-labels.</p>
+<hr>
+</section>
+</section>
+<section id="prediction-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="prediction-mechanism">Prediction Mechanism</h2>
+<p>For each masked time step <img src="https://latex.codecogs.com/png.latex?t">, the encoder output <img src="https://latex.codecogs.com/png.latex?o_t"> is projected into a class embedding space using a projection matrix <img src="https://latex.codecogs.com/png.latex?A">.</p>
+<p>Each projected representation is compared with class embeddings:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Ae_c%20%5Cin%20C%0A"></p>
+<p>where each index <img src="https://latex.codecogs.com/png.latex?c"> corresponds to a <strong>discrete codeword</strong> from the clustering codebook.</p>
+<p>Similarity is computed using <strong>cosine similarity</strong>, and probabilities are defined as:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Ap(c%20%5Cmid%20%5Ctilde%7BX%7D,%20t)%0A=%0A%5Cfrac%7B%0A%5Cexp(%5Cmathrm%7Bsim%7D(A%20o_t,%20e_c)/%5Ctau)%0A%7D%7B%0A%5Csum_%7Bc'=1%7D%5E%7BC%7D%0A%5Cexp(%5Cmathrm%7Bsim%7D(A%20o_t,%20e_%7Bc'%7D)/%5Ctau)%0A%7D%0A"></p>
+<p>where:</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?%5Cmathrm%7Bsim%7D(%5Ccdot,%5Ccdot)"> denotes cosine similarity<br>
+</li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Ctau%20=%200.1"> is the temperature parameter</li>
+</ul>
+<hr>
+</section>
+<section id="training-objective" class="level2">
+<h2 class="anchored" data-anchor-id="training-objective">Training Objective</h2>
+<p>Training focuses on predicting correct cluster assignments <strong>only for masked positions</strong>.</p>
+<p>Let:</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?M"> = set of masked time steps<br>
+</li>
+<li><img src="https://latex.codecogs.com/png.latex?Z%20=%20%5C%7Bz_t%5C%7D"> = pseudo-label sequence from clustering</li>
+</ul>
+<p>The objective function is:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AL_%7Bmask%7D%0A=%0A%5Csum_%7Bt%20%5Cin%20M%7D%0A%5Clog%20p(z_t%20%5Cmid%20%5Ctilde%7BX%7D,%20t)%0A"></p>
+<p>where:</p>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?X"> = original input sequence<br>
+</li>
+<li><img src="https://latex.codecogs.com/png.latex?%5Ctilde%7BX%7D"> = masked input sequence<br>
+</li>
+<li><img src="https://latex.codecogs.com/png.latex?z_t"> = cluster label assigned to time step <img src="https://latex.codecogs.com/png.latex?t"></li>
+</ul>
+<p>This objective encourages the model to <strong>infer masked acoustic units from context</strong>, resulting in robust speech representations that capture:</p>
+<ul>
+<li>Phonetic structure<br>
+</li>
+<li>Temporal dependencies<br>
+</li>
+<li>Contextual relationships</li>
+</ul>
+<hr>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>HuBERT represents a significant development in <strong>self-supervised speech learning</strong>, enabling models to:</p>
+<ul>
+<li>Learn from <strong>large-scale unlabeled speech</strong></li>
+<li>Reduce dependence on costly transcriptions</li>
+<li>Improve performance across <strong>speech recognition</strong> and downstream tasks</li>
+</ul>
+<hr>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>Wei-Ning Hsu, Benjamin Bolte, Yao-Hung Hubert Tsai, Kushal Lakhotia, Ruslan Salakhutdinov, and Abdelrahman Mohamed. 2021. <strong>HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units.</strong> IEEE/ACM Trans. Audio, Speech and Lang. Proc. 29 (2021), 3451–3460. <a href="https://doi.org/10.1109/TASLP.2021.3122291">https://doi.org/10.1109/TASLP.2021.3122291</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>Speech Processing</category>
+  <category>Self-Supervised Learning</category>
+  <category>ASR</category>
+  <guid>http://siddharthtumre.github.io/posts/HuBERT/</guid>
+  <pubDate>Sun, 12 Apr 2026 00:00:00 GMT</pubDate>
+</item>
 </channel>
 </rss>

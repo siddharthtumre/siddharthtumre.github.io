@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-04-12">
 
-<title>Siddharth Tumre – siddharth.tumre</title>
+<title>HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning – siddharth.tumre</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,22 +27,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4897d45d2f75ed4f519693be625836c5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-4897d45d2f75ed4f519693be625836c5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,18 +73,47 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">siddharth.tumre</span>
     </a>
   </div>
@@ -93,15 +124,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -110,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-more">    
         <li>
-    <a class="dropdown-item" href="./CV1104.pdf" rel="noopener" target="_blank"><i class="bi bi-file-earmark-pdf" role="img">
+    <a class="dropdown-item" href="../../CV1104.pdf" rel="noopener" target="_blank"><i class="bi bi-file-earmark-pdf" role="img">
 </i> 
  <span class="dropdown-text">View CV (PDF)</span></a>
   </li>  
@@ -130,7 +161,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Twitter</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./blog.xml"><i class="bi bi-rss" role="img">
+    <a class="dropdown-item" href="../../blog.xml"><i class="bi bi-rss" role="img">
 </i> 
  <span class="dropdown-text">RSS Feed</span></a>
   </li>  
@@ -144,71 +175,263 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Speech Processing</div>
+                <div class="quarto-category">Self-Supervised Learning</div>
+                <div class="quarto-category">ASR</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 12, 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
-<!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Siddharth Tumre</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header> <div class="about-links">
-  <a href="mailto:siddharth.tumre@outlook.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-  <a href="https://github.com/siddharthtumre" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="https://www.linkedin.com/in/siddharth-tumre/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://x.com/siddharth_tumre" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">twitter</span>
-  </a>
-</div>
-      <div class="about-contents"><main class="content" id="quarto-document-content">
-<div id="hero-heading">
-<p>Siddharth is a Researcher at <a href="https://www.tcs.com/what-we-do/research">TCS Research</a> in the Data and Decision Sciences Research Area. His work lies at the intersection of Natural Language Processing (NLP) and Large Language Models (LLMs), with a focus on developing robust, domain-specific applications for real-world impact.</p>
-<p><a href="CV1104.pdf" target="_blank" rel="noopener"><strong>View Full Curriculum Vitae</strong></a></p>
-<section id="education" class="level2">
-<h2 data-anchor-id="education">Education</h2>
-<dl>
-<dt><strong>Indian Institute of Technology Delhi</strong></dt>
-<dd>
-M.Tech in Computer Technology | 2021–2023
-</dd>
-<dt><strong>Chaitanya Bharathi Institute of Technology</strong></dt>
-<dd>
-B.E in Computer Science and Engineering | 2017–2021
-</dd>
-</dl>
-</section>
-<section id="experience" class="level2">
-<h2 data-anchor-id="experience">Experience</h2>
-<p>TCS Research (<em>TRDDC</em>) | Researcher | September 2023 - present</p>
-</section>
-</div>
-
-
-</main></div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#model-architecture" id="toc-model-architecture" class="nav-link" data-scroll-target="#model-architecture">Model Architecture</a>
+  <ul class="collapse">
+  <li><a href="#masking-strategy" id="toc-masking-strategy" class="nav-link" data-scroll-target="#masking-strategy">Masking Strategy</a></li>
+  </ul></li>
+  <li><a href="#pre-training-procedure" id="toc-pre-training-procedure" class="nav-link" data-scroll-target="#pre-training-procedure">Pre-Training Procedure</a>
+  <ul class="collapse">
+  <li><a href="#step-1-initial-feature-extraction" id="toc-step-1-initial-feature-extraction" class="nav-link" data-scroll-target="#step-1-initial-feature-extraction">Step 1: Initial Feature Extraction</a></li>
+  <li><a href="#step-2-iterative-target-refinement" id="toc-step-2-iterative-target-refinement" class="nav-link" data-scroll-target="#step-2-iterative-target-refinement">Step 2: Iterative Target Refinement</a></li>
+  </ul></li>
+  <li><a href="#prediction-mechanism" id="toc-prediction-mechanism" class="nav-link" data-scroll-target="#prediction-mechanism">Prediction Mechanism</a></li>
+  <li><a href="#training-objective" id="toc-training-objective" class="nav-link" data-scroll-target="#training-objective">Training Objective</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
     </div>
-    <img src="profile.jpeg" class="about-image
-  rounded " style="width: 15em;">
-  </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="hubert_overview.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:85.0%"></p>
+</figure>
 </div>
- <!-- /main -->
+<p><em>Overview of the HuBERT architecture showing convolutional feature extraction, Transformer encoding, masking, and prediction of cluster-based acoustic targets.</em></p>
+<hr>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>HuBERT (Hidden-Unit BERT) is an <strong>encoder-only self-supervised speech representation model</strong> introduced by Hsu et al.&nbsp;(2021). It is inspired by the masked language modeling objective used in BERT but is designed specifically for <strong>raw speech signals</strong>.</p>
+<p>Instead of relying on textual supervision, HuBERT generates <strong>discrete pseudo-labels</strong> through an offline clustering process. This enables BERT-style pre-training directly on unlabeled speech data.</p>
+<p>The key idea behind HuBERT is simple yet powerful:</p>
+<blockquote class="blockquote">
+<p>Robust speech representations can be learned by predicting masked portions of an input sequence using contextual information.</p>
+</blockquote>
+<p>The model learns to encode unmasked acoustic inputs into meaningful latent representations while capturing <strong>long-range temporal dependencies</strong> needed to infer masked regions.</p>
+<p>HuBERT is released in multiple configurations:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Variant</th>
+<th>Parameters</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>BASE</td>
+<td>~90M</td>
+</tr>
+<tr class="even">
+<td>LARGE</td>
+<td>~300M</td>
+</tr>
+<tr class="odd">
+<td>X-LARGE</td>
+<td>~1B</td>
+</tr>
+</tbody>
+</table>
+<p>These variants share the same architectural design but differ in depth and dimensionality.</p>
+<hr>
+</section>
+<section id="model-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="model-architecture">Model Architecture</h2>
+<p>Given a raw waveform input sampled at <strong>16 kHz</strong>, the signal is first processed using a stack of <strong>seven convolutional layers</strong>, each containing <strong>512 channels</strong>.</p>
+<p>These convolutional layers:</p>
+<ul>
+<li>Extract low-level spectral information<br>
+</li>
+<li>Downsample the temporal resolution<br>
+</li>
+<li>Produce approximately <strong>one frame every 20 ms</strong></li>
+</ul>
+<p>The resulting sequence of latent acoustic features is passed to a <strong>Transformer encoder</strong>, which models contextual dependencies across time and produces <strong>contextualized representations</strong> for each time step.</p>
+<section id="masking-strategy" class="level3">
+<h3 class="anchored" data-anchor-id="masking-strategy">Masking Strategy</h3>
+<p>During training:</p>
+<ul>
+<li><strong>8% of tokens</strong> are randomly masked<br>
+</li>
+<li>Masking is applied using <strong>span length = 10</strong></li>
+<li>The masked sequence is denoted as: <span class="math inline">\(\tilde{X}\)</span></li>
+</ul>
+<p>The Transformer processes this partially observed sequence and generates representations for both <strong>masked</strong> and <strong>unmasked</strong> time steps.</p>
+<hr>
+</section>
+</section>
+<section id="pre-training-procedure" class="level2">
+<h2 class="anchored" data-anchor-id="pre-training-procedure">Pre-Training Procedure</h2>
+<p>Unlike supervised speech models that rely on phonetic labels, HuBERT generates <strong>training targets using unsupervised clustering</strong>.</p>
+<section id="step-1-initial-feature-extraction" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-initial-feature-extraction">Step 1: Initial Feature Extraction</h3>
+<p>The process begins by extracting:</p>
+<ul>
+<li><strong>39-dimensional MFCC features</strong>
+<ul>
+<li>13 static coefficients<br>
+</li>
+<li>First-order derivatives<br>
+</li>
+<li>Second-order derivatives</li>
+</ul></li>
+</ul>
+<p>These MFCC features capture spectral characteristics relevant for phonetic discrimination.</p>
+<p>Next:</p>
+<ul>
+<li><strong>k-means clustering</strong> is applied</li>
+<li><strong>100 clusters</strong> are created</li>
+<li>These clusters serve as <strong>pseudo-labels</strong></li>
+</ul>
+<hr>
+</section>
+<section id="step-2-iterative-target-refinement" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-iterative-target-refinement">Step 2: Iterative Target Refinement</h3>
+<p>To improve pseudo-label quality, HuBERT uses <strong>iterative refinement</strong>.</p>
+<p>Instead of MFCC features:</p>
+<ul>
+<li>Latent representations from the <strong>6th Transformer layer</strong> are used</li>
+<li>These representations are clustered into <strong>500 units</strong></li>
+<li>Only <strong>~10% of training data</strong> is sampled to reduce computational cost</li>
+</ul>
+<p>For larger models (LARGE and X-LARGE):</p>
+<ul>
+<li>Clustering is not restarted from MFCC features</li>
+<li>Instead, deeper-layer features from a previously trained HuBERT model are used</li>
+</ul>
+<p>This enables efficient scaling while maintaining high-quality pseudo-labels.</p>
+<hr>
+</section>
+</section>
+<section id="prediction-mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="prediction-mechanism">Prediction Mechanism</h2>
+<p>For each masked time step <span class="math inline">\(t\)</span>, the encoder output <span class="math inline">\(o_t\)</span> is projected into a class embedding space using a projection matrix <span class="math inline">\(A\)</span>.</p>
+<p>Each projected representation is compared with class embeddings:</p>
+<p><span class="math display">\[
+e_c \in C
+\]</span></p>
+<p>where each index <span class="math inline">\(c\)</span> corresponds to a <strong>discrete codeword</strong> from the clustering codebook.</p>
+<p>Similarity is computed using <strong>cosine similarity</strong>, and probabilities are defined as:</p>
+<p><span class="math display">\[
+p(c \mid \tilde{X}, t)
+=
+\frac{
+\exp(\mathrm{sim}(A o_t, e_c)/\tau)
+}{
+\sum_{c'=1}^{C}
+\exp(\mathrm{sim}(A o_t, e_{c'})/\tau)
+}
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(\mathrm{sim}(\cdot,\cdot)\)</span> denotes cosine similarity<br>
+</li>
+<li><span class="math inline">\(\tau = 0.1\)</span> is the temperature parameter</li>
+</ul>
+<hr>
+</section>
+<section id="training-objective" class="level2">
+<h2 class="anchored" data-anchor-id="training-objective">Training Objective</h2>
+<p>Training focuses on predicting correct cluster assignments <strong>only for masked positions</strong>.</p>
+<p>Let:</p>
+<ul>
+<li><span class="math inline">\(M\)</span> = set of masked time steps<br>
+</li>
+<li><span class="math inline">\(Z = \{z_t\}\)</span> = pseudo-label sequence from clustering</li>
+</ul>
+<p>The objective function is:</p>
+<p><span class="math display">\[
+L_{mask}
+=
+\sum_{t \in M}
+\log p(z_t \mid \tilde{X}, t)
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(X\)</span> = original input sequence<br>
+</li>
+<li><span class="math inline">\(\tilde{X}\)</span> = masked input sequence<br>
+</li>
+<li><span class="math inline">\(z_t\)</span> = cluster label assigned to time step <span class="math inline">\(t\)</span></li>
+</ul>
+<p>This objective encourages the model to <strong>infer masked acoustic units from context</strong>, resulting in robust speech representations that capture:</p>
+<ul>
+<li>Phonetic structure<br>
+</li>
+<li>Temporal dependencies<br>
+</li>
+<li>Contextual relationships</li>
+</ul>
+<hr>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>HuBERT represents a significant development in <strong>self-supervised speech learning</strong>, enabling models to:</p>
+<ul>
+<li>Learn from <strong>large-scale unlabeled speech</strong></li>
+<li>Reduce dependence on costly transcriptions</li>
+<li>Improve performance across <strong>speech recognition</strong> and downstream tasks</li>
+</ul>
+<hr>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>Wei-Ning Hsu, Benjamin Bolte, Yao-Hung Hubert Tsai, Kushal Lakhotia, Ruslan Salakhutdinov, and Abdelrahman Mohamed. 2021. <strong>HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units.</strong> IEEE/ACM Trans. Audio, Speech and Lang. Proc. 29 (2021), 3451–3460. <a href="https://doi.org/10.1109/TASLP.2021.3122291">https://doi.org/10.1109/TASLP.2021.3122291</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -600,6 +823,35 @@ B.E in Computer Science and Engineering | 2017–2021
     }
   });
   </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "siddharthtumre/siddharthtumre.github.io";
+    script.dataset.repoId = "R_kgDOOsDEMQ";
+    script.dataset.category = "General";
+    script.dataset.categoryId = "DIC_kwDOOsDEMc4CqS2n";
+    script.dataset.mapping = "title";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -643,5 +895,5 @@ B.E in Computer Science and Engineering | 2017–2021
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
