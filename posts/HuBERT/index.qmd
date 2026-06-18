@@ -15,8 +15,6 @@ format:
 
 *Overview of the HuBERT architecture showing convolutional feature extraction, Transformer encoding, masking, and prediction of cluster-based acoustic targets.*
 
----
-
 ## Introduction
 
 HuBERT (Hidden-Unit BERT) is an **encoder-only self-supervised speech representation model** introduced by Hsu et al. (2021). It is inspired by the masked language modeling objective used in BERT but is designed specifically for **raw speech signals**.
@@ -38,8 +36,6 @@ HuBERT is released in multiple configurations:
 | X-LARGE | ~1B |
 
 These variants share the same architectural design but differ in depth and dimensionality.
-
----
 
 ## Model Architecture
 
@@ -63,9 +59,7 @@ During training:
 
 The Transformer processes this partially observed sequence and generates representations for both **masked** and **unmasked** time steps.
 
----
-
-## Pre-Training Procedure
+## Pre-Training
 
 Unlike supervised speech models that rely on phonetic labels, HuBERT generates **training targets using unsupervised clustering**.
 
@@ -86,8 +80,6 @@ Next:
 - **100 clusters** are created
 - These clusters serve as **pseudo-labels**
 
----
-
 ### Step 2: Iterative Target Refinement
 
 To improve pseudo-label quality, HuBERT uses **iterative refinement**.
@@ -105,9 +97,9 @@ For larger models (LARGE and X-LARGE):
 
 This enables efficient scaling while maintaining high-quality pseudo-labels.
 
----
+## Training Objective
 
-## Prediction Mechanism
+Training focuses on predicting correct cluster assignments **only for masked positions**.
 
 For each masked time step $t$, the encoder output $o_t$ is projected into a class embedding space using a projection matrix $A$.
 
@@ -137,18 +129,15 @@ where:
 - $\mathrm{sim}(\cdot,\cdot)$ denotes cosine similarity  
 - $\tau = 0.1$ is the temperature parameter  
 
----
-
-## Training Objective
-
-Training focuses on predicting correct cluster assignments **only for masked positions**.
+The loss function is then the sum, over the set of masked tokens $M$, of the probability
+that the model assigns to these correct units.
 
 Let:
 
 - $M$ = set of masked time steps  
 - $Z = \{z_t\}$ = pseudo-label sequence from clustering  
 
-The objective function is:
+The loss function is given as:
 
 $$
 L_{mask}
@@ -163,23 +152,15 @@ where:
 - $\tilde{X}$ = masked input sequence  
 - $z_t$ = cluster label assigned to time step $t$
 
-This objective encourages the model to **infer masked acoustic units from context**, resulting in robust speech representations that capture:
-
-- Phonetic structure  
-- Temporal dependencies  
-- Contextual relationships
-
----
+This objective encourages the model to **infer masked acoustic units from context**, resulting in robust speech representations that capture: _phonetic structure_, _temporal dependencies_ and _contextual relationships_.
 
 ## Conclusion
 
-HuBERT represents a significant development in **self-supervised speech learning**, enabling models to:
+HuBERT represents a significant development in learning robust **self-supervised speech representations**, enabling models to:
 
-- Learn from **large-scale unlabeled speech**
-- Reduce dependence on costly transcriptions
-- Improve performance across **speech recognition** and downstream tasks
-
----
+- Learn from _large-scale unlabeled speech_.
+- Reduce dependence on manual transcriptions.
+- Improve performance across _speech recognition_ and other downstream tasks.
 
 ## References
 

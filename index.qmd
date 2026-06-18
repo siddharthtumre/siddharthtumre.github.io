@@ -8,18 +8,13 @@ about:
   template: jolla
   image: profile.jpeg
 comments: false
+css: styles.css
 ---
 
 <div class="intro-box">
-Hi! I'm **Siddharth**. I am curious about and have worked in the areas of **Machine Learning, Natural Language Processing, and Large Language Models**. I am curious about both the theoretical foundations and practical applications. In my free time, I love reading books, watching movies, and occasionally playing badminton.
+I am a Researcher with experience across a range of natural language processing (NLP) tasks, including text classification, named entity recognition, semantic textual similarity, information extraction, and natural language generation using state-of-the-art statistical, discriminative, and generative models.
+
+My research interests center on grounded reasoning, knowledge representation, and the integration of structured knowledge into foundation models. More recently, I have been exploring knowledge graphs and reasoning, especially natural language to graph query language translation. I am also exploring speech technologies, with a focus on automatic speech recognition (ASR) for disordered speech.
 </div>
 
-<br>
-
-Feel free to [get in touch](mailto:%20siddharth.tumre@outlook.com)!
-
-👨🏻‍💻 [about](about.qmd)
-
-📝 [blog posts](blog.qmd)
-
-📚 [publications](publications.qmd)
+<p class="contact-line">Feel free to <a href="mailto:siddharth.tumre@outlook.com">get in touch</a>.</p>
