@@ -1,17 +1,10 @@
 [
   {
-    "objectID": "publications/non-archival/sumit2025llm4eval.html",
-    "href": "publications/non-archival/sumit2025llm4eval.html",
-    "title": "LLM-as-a-Judge: Evaluating LLM Recommendations for Industrial Safety",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Siddharth Tumre",
     "section": "",
-    "text": "Safety incidents and accidents pose significant challenges to industries, affecting workers, their families, productivity, and economic outcomes. To mitigate these risks, industries often engage specialized agencies to investigate the root causes of accidents and recommend preventive actions to avoid recurrence. Large Language Models (LLMs) offer the potential to automate and streamline the task of generating preventive action recommendations, reducing human effort. However, the reliability of these models is hindered by issues such as hallucination, raising concerns about their helpfulness in industrial safety. This poses another challenge to assess the quality and feasibility of these generated recommendations. This study aims at exploring the application of LLMs to further categorize these safety recommendations based on the relevance to the safety incident into Specific, Generic, or Irrelevant categories. A total of 2272 generated recommendations were reviewed and annotated as part of gold standard data. We examine the agreement between LLM generated and Human annotated labels for categorization of generated recommendations. Our findings suggest that LLMs currently struggle to accurately categorize their recommendations as specific to incidents. In comparison, traditional supervised learning methods outperform LLMs in recommendation classification tasks. This study highlights the limitations of existing open-source LLMs and offers insights into areas for improvement to enhance their applicability in industrial safety contexts."
-  },
-  {
-    "objectID": "publications/non-archival/sumit2025llm4eval.html#abstract",
-    "href": "publications/non-archival/sumit2025llm4eval.html#abstract",
-    "title": "LLM-as-a-Judge: Evaluating LLM Recommendations for Industrial Safety",
-    "section": "",
-    "text": "Safety incidents and accidents pose significant challenges to industries, affecting workers, their families, productivity, and economic outcomes. To mitigate these risks, industries often engage specialized agencies to investigate the root causes of accidents and recommend preventive actions to avoid recurrence. Large Language Models (LLMs) offer the potential to automate and streamline the task of generating preventive action recommendations, reducing human effort. However, the reliability of these models is hindered by issues such as hallucination, raising concerns about their helpfulness in industrial safety. This poses another challenge to assess the quality and feasibility of these generated recommendations. This study aims at exploring the application of LLMs to further categorize these safety recommendations based on the relevance to the safety incident into Specific, Generic, or Irrelevant categories. A total of 2272 generated recommendations were reviewed and annotated as part of gold standard data. We examine the agreement between LLM generated and Human annotated labels for categorization of generated recommendations. Our findings suggest that LLMs currently struggle to accurately categorize their recommendations as specific to incidents. In comparison, traditional supervised learning methods outperform LLMs in recommendation classification tasks. This study highlights the limitations of existing open-source LLMs and offers insights into areas for improvement to enhance their applicability in industrial safety contexts."
+    "text": "I am a Researcher with experience across a range of natural language processing (NLP) tasks, including text classification, named entity recognition, semantic textual similarity, information extraction, and natural language generation using state-of-the-art statistical, discriminative, and generative models.\nMy research interests center on grounded reasoning, knowledge representation, and the integration of structured knowledge into foundation models. More recently, I have been exploring knowledge graphs and reasoning, especially natural language to graph query language translation. I am also exploring speech technologies, with a focus on automatic speech recognition (ASR) for disordered speech.\n\n\nFeel free to get in touch."
   },
   {
     "objectID": "publications/archival/tumre2025ndd.html",
@@ -33,160 +26,6 @@
     "title": "Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds",
     "section": "Abstract",
     "text": "Abstract\nNews aggregators play a key role in the rapidly evolving digital landscape by providing comprehensive and timely news stories aggregated from diverse sources into one feed. As these articles are sourced from different outlets, they often end up covering the same underlying event but differ in phrasing, formatting or supplemented with additional details. It is crucial for the news aggregators to identify these near-duplicates, improving the content quality and user engagement by steering away from redundant information. The problem of near-duplicate news detection has become harder with increasing use of paywalls by the news websites resulting in restricted access to the content. It is now common to get only the headline and a short snippet from the article. Previous works have concentrated on full length versions of documents such as webpages. There is very little work that focuses on this variation of the near-duplicate detection problem in which only headline and a small text blurb is available for each news article. We propose Near-Duplicate Detection Using Metadata Augmented Communities (NDD-MAC) approach that combines embeddings from pretrained language model (PLM) and latent metadata of a news article followed by community detection to identify clusters of near-duplicates. We show the efficacy of proposed approach using 2 different real-world datasets. By integrating metadata with community detection, NDD-MAC is able to detect nuanced similarities and differences in news snippets and offers an industrial scale solution for the near-duplicate detection in scenarios with restricted content availability."
-  },
-  {
-    "objectID": "publications/archival/tumre2025flairs.html",
-    "href": "publications/archival/tumre2025flairs.html",
-    "title": "Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety",
-    "section": "",
-    "text": "Tumre, S., Koundanya, S., Kumbhar, S., & Patil, S. (2025). Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety. The International FLAIRS Conference Proceedings, 38(1). https://doi.org/10.32473/flairs.38.1.138959"
-  },
-  {
-    "objectID": "publications/archival/tumre2025flairs.html#citation-apa",
-    "href": "publications/archival/tumre2025flairs.html#citation-apa",
-    "title": "Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety",
-    "section": "",
-    "text": "Tumre, S., Koundanya, S., Kumbhar, S., & Patil, S. (2025). Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety. The International FLAIRS Conference Proceedings, 38(1). https://doi.org/10.32473/flairs.38.1.138959"
-  },
-  {
-    "objectID": "publications/archival/tumre2025flairs.html#abstract",
-    "href": "publications/archival/tumre2025flairs.html#abstract",
-    "title": "Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety",
-    "section": "Abstract",
-    "text": "Abstract\nImproving industrial safety using NLP technologies supports the triple bottom line of environmental, social and economic sustainability. Rapid evolution of Large Language Models (LLMs) has potential to transform the industrial safety and improve disaster mitigation. In this paper, we evaluate and benchmark the feasibility of using Falcon and Phi3 open-source LLMs for the task of generating preventive recommendations to improve industrial safety. Based on domain expert evaluation, we find that the standard, pre-trained LLMs have limitations concerning the quality and quantity of recommendations generated. They can be of diverse quality, such as specific, generic, or irrelevant. We find that the pre-trained version of Phi3 is better than base version of Falcon for the proposed task. We show that the quantity, output format as well as domain-awareness of the Falcon can be significantly improved using supervised fine-tuning (SFT) with a small amount of labeled data that illustrates the expected output. In spite of the quality improvement post-SFT and the high societal and economic impact of the application, there are still many areas of improvement, which we point to as part of future work. To the best of our knowledge, this is the first attempt to align LLMs for industrial safety recommendation improvement."
-  },
-  {
-    "objectID": "publications.html",
-    "href": "publications.html",
-    "title": "Publications",
-    "section": "",
-    "text": "Home\n    Publications"
-  },
-  {
-    "objectID": "publications.html#archival-conference-papers",
-    "href": "publications.html#archival-conference-papers",
-    "title": "Publications",
-    "section": "Archival Conference Papers",
-    "text": "Archival Conference Papers\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n      \n        Publication\n      \n      \n        Year\n      \n    \n  \n    \n      \n      \n    \n\n\n\n  \n    Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety\n    Siddharth Tumre, Sumit Koundanya, Shubham Kumbhar, Sangameshwar Patil\n    FLAIRS\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n  \n    Benchmarking Near-Duplicate Detection in the era of Pay-walled News\n    Alok Kumar, Siddharth Tumre, Sangameshwar Patil\n    WWW\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n  \n    Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds\n    Siddharth Tumre, Sangameshwar Patil, Alok Kumar\n    NAACL\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n  \n    Newsletter-Factory: A Thematic Newsletter Generation Tool for Curating Business Insights\n    Siddharth Tumre, Alok Kumar, Ajay Phade, Nihar Riswadkar and Sangameshwar Patil\n    Text2Story\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "publications.html#non-archival-posters-workshop-papers",
-    "href": "publications.html#non-archival-posters-workshop-papers",
-    "title": "Publications",
-    "section": "Non-Archival Posters & Workshop Papers",
-    "text": "Non-Archival Posters & Workshop Papers\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n      \n        Publication\n      \n      \n        Year\n      \n    \n  \n    \n      \n      \n    \n\n\n\n  \n    Employing Open-Source LLMs for Preventive Action Recommendations to Avoid Industrial Safety Incidents\n    Shubham Kumbhar, Siddharth Tumre, Sumit Koundanya, Sangameshwar Patil\n    Workshop on Open-Source AI for Mainstream Use, AAAI\n    (2025)\n    \n      Details\n    \n    \n    \n  \n\n  \n    LLM-as-a-Judge: Evaluating LLM Recommendations for Industrial Safety\n    Sumit Koundanya, Shubham Kumbhar, Siddharth Tumre, Sangameshwar Patil\n    LLM4Eval @ WSDM\n    (2025)\n    \n      Details\n    \n    \n    \n  \n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Siddharth Tumre",
-    "section": "",
-    "text": "Siddharth is a Researcher at TCS Research in the Data and Decision Sciences Research Area. His work lies at the intersection of Natural Language Processing (NLP) and Large Language Models (LLMs), with a focus on developing robust, domain-specific applications for real-world impact.\nView Full Curriculum Vitae\n\n\n\nIndian Institute of Technology Delhi\n\nM.Tech in Computer Technology | 2021–2023\n\nChaitanya Bharathi Institute of Technology\n\nB.E in Computer Science and Engineering | 2017–2021\n\n\n\n\n\nTCS Research (TRDDC) | Researcher | September 2023 - present"
-  },
-  {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "Siddharth Tumre",
-    "section": "",
-    "text": "Indian Institute of Technology Delhi\n\nM.Tech in Computer Technology | 2021–2023\n\nChaitanya Bharathi Institute of Technology\n\nB.E in Computer Science and Engineering | 2017–2021"
-  },
-  {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
-    "title": "Siddharth Tumre",
-    "section": "",
-    "text": "TCS Research (TRDDC) | Researcher | September 2023 - present"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning\n\n\n\nSpeech Processing\n\nSelf-Supervised Learning\n\nASR\n\n\n\n\n\n\n\n\n\nApr 12, 2026\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/HuBERT/index.html",
-    "href": "posts/HuBERT/index.html",
-    "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
-    "section": "",
-    "text": "Overview of the HuBERT architecture showing convolutional feature extraction, Transformer encoding, masking, and prediction of cluster-based acoustic targets."
-  },
-  {
-    "objectID": "posts/HuBERT/index.html#introduction",
-    "href": "posts/HuBERT/index.html#introduction",
-    "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
-    "section": "Introduction",
-    "text": "Introduction\nHuBERT (Hidden-Unit BERT) is an encoder-only self-supervised speech representation model introduced by Hsu et al. (2021). It is inspired by the masked language modeling objective used in BERT but is designed specifically for raw speech signals.\nInstead of relying on textual supervision, HuBERT generates discrete pseudo-labels through an offline clustering process. This enables BERT-style pre-training directly on unlabeled speech data.\nThe key idea behind HuBERT is simple yet powerful:\n\nRobust speech representations can be learned by predicting masked portions of an input sequence using contextual information.\n\nThe model learns to encode unmasked acoustic inputs into meaningful latent representations while capturing long-range temporal dependencies needed to infer masked regions.\nHuBERT is released in multiple configurations:\n\n\n\nVariant\nParameters\n\n\n\n\nBASE\n~90M\n\n\nLARGE\n~300M\n\n\nX-LARGE\n~1B\n\n\n\nThese variants share the same architectural design but differ in depth and dimensionality."
-  },
-  {
-    "objectID": "posts/HuBERT/index.html#model-architecture",
-    "href": "posts/HuBERT/index.html#model-architecture",
-    "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
-    "section": "Model Architecture",
-    "text": "Model Architecture\nGiven a raw waveform input sampled at 16 kHz, the signal is first processed using a stack of seven convolutional layers, each containing 512 channels.\nThese convolutional layers:\n\nExtract low-level spectral information\n\nDownsample the temporal resolution\n\nProduce approximately one frame every 20 ms\n\nThe resulting sequence of latent acoustic features is passed to a Transformer encoder, which models contextual dependencies across time and produces contextualized representations for each time step.\n\nMasking Strategy\nDuring training:\n\n8% of tokens are randomly masked\n\nMasking is applied using span length = 10\nThe masked sequence is denoted as: \\(\\tilde{X}\\)\n\nThe Transformer processes this partially observed sequence and generates representations for both masked and unmasked time steps."
-  },
-  {
-    "objectID": "posts/HuBERT/index.html#pre-training-procedure",
-    "href": "posts/HuBERT/index.html#pre-training-procedure",
-    "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
-    "section": "Pre-Training Procedure",
-    "text": "Pre-Training Procedure\nUnlike supervised speech models that rely on phonetic labels, HuBERT generates training targets using unsupervised clustering.\n\nStep 1: Initial Feature Extraction\nThe process begins by extracting:\n\n39-dimensional MFCC features\n\n13 static coefficients\n\nFirst-order derivatives\n\nSecond-order derivatives\n\n\nThese MFCC features capture spectral characteristics relevant for phonetic discrimination.\nNext:\n\nk-means clustering is applied\n100 clusters are created\nThese clusters serve as pseudo-labels\n\n\n\n\nStep 2: Iterative Target Refinement\nTo improve pseudo-label quality, HuBERT uses iterative refinement.\nInstead of MFCC features:\n\nLatent representations from the 6th Transformer layer are used\nThese representations are clustered into 500 units\nOnly ~10% of training data is sampled to reduce computational cost\n\nFor larger models (LARGE and X-LARGE):\n\nClustering is not restarted from MFCC features\nInstead, deeper-layer features from a previously trained HuBERT model are used\n\nThis enables efficient scaling while maintaining high-quality pseudo-labels."
-  },
-  {
-    "objectID": "posts/HuBERT/index.html#prediction-mechanism",
-    "href": "posts/HuBERT/index.html#prediction-mechanism",
-    "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
-    "section": "Prediction Mechanism",
-    "text": "Prediction Mechanism\nFor each masked time step \\(t\\), the encoder output \\(o_t\\) is projected into a class embedding space using a projection matrix \\(A\\).\nEach projected representation is compared with class embeddings:\n\\[\ne_c \\in C\n\\]\nwhere each index \\(c\\) corresponds to a discrete codeword from the clustering codebook.\nSimilarity is computed using cosine similarity, and probabilities are defined as:\n\\[\np(c \\mid \\tilde{X}, t)\n=\n\\frac{\n\\exp(\\mathrm{sim}(A o_t, e_c)/\\tau)\n}{\n\\sum_{c'=1}^{C}\n\\exp(\\mathrm{sim}(A o_t, e_{c'})/\\tau)\n}\n\\]\nwhere:\n\n\\(\\mathrm{sim}(\\cdot,\\cdot)\\) denotes cosine similarity\n\n\\(\\tau = 0.1\\) is the temperature parameter"
-  },
-  {
-    "objectID": "posts/HuBERT/index.html#training-objective",
-    "href": "posts/HuBERT/index.html#training-objective",
-    "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
-    "section": "Training Objective",
-    "text": "Training Objective\nTraining focuses on predicting correct cluster assignments only for masked positions.\nLet:\n\n\\(M\\) = set of masked time steps\n\n\\(Z = \\{z_t\\}\\) = pseudo-label sequence from clustering\n\nThe objective function is:\n\\[\nL_{mask}\n=\n\\sum_{t \\in M}\n\\log p(z_t \\mid \\tilde{X}, t)\n\\]\nwhere:\n\n\\(X\\) = original input sequence\n\n\\(\\tilde{X}\\) = masked input sequence\n\n\\(z_t\\) = cluster label assigned to time step \\(t\\)\n\nThis objective encourages the model to infer masked acoustic units from context, resulting in robust speech representations that capture:\n\nPhonetic structure\n\nTemporal dependencies\n\nContextual relationships"
-  },
-  {
-    "objectID": "posts/HuBERT/index.html#conclusion",
-    "href": "posts/HuBERT/index.html#conclusion",
-    "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
-    "section": "Conclusion",
-    "text": "Conclusion\nHuBERT represents a significant development in self-supervised speech learning, enabling models to:\n\nLearn from large-scale unlabeled speech\nReduce dependence on costly transcriptions\nImprove performance across speech recognition and downstream tasks"
-  },
-  {
-    "objectID": "posts/HuBERT/index.html#references",
-    "href": "posts/HuBERT/index.html#references",
-    "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
-    "section": "References",
-    "text": "References\nWei-Ning Hsu, Benjamin Bolte, Yao-Hung Hubert Tsai, Kushal Lakhotia, Ruslan Salakhutdinov, and Abdelrahman Mohamed. 2021. HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units. IEEE/ACM Trans. Audio, Speech and Lang. Proc. 29 (2021), 3451–3460. https://doi.org/10.1109/TASLP.2021.3122291"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Siddharth Tumre",
-    "section": "",
-    "text": "Hi! I’m Siddharth. I am curious about and have worked in the areas of Machine Learning, Natural Language Processing, and Large Language Models. I am curious about both the theoretical foundations and practical applications. In my free time, I love reading books, watching movies, and occasionally playing badminton.\n\n\nFeel free to get in touch!\n👨🏻‍💻 about\n📝 blog posts\n📚 publications"
-  },
-  {
-    "objectID": "publications/archival/alok2025www.html",
-    "href": "publications/archival/alok2025www.html",
-    "title": "Benchmarking Near-Duplicate Detection in the era of Pay-walled News",
-    "section": "",
-    "text": "Kumar, A., Patil, S., & Tumre, S. (2025). Benchmarking Near-Duplicate Detection in the era of Pay-walled News. In Companion Proceedings of the ACM Web Conference 2025 (WWW ’25). Association for Computing Machinery, New York, NY, USA. https://doi.org/10.1145/3701716.3715303."
-  },
-  {
-    "objectID": "publications/archival/alok2025www.html#citation-apa",
-    "href": "publications/archival/alok2025www.html#citation-apa",
-    "title": "Benchmarking Near-Duplicate Detection in the era of Pay-walled News",
-    "section": "",
-    "text": "Kumar, A., Patil, S., & Tumre, S. (2025). Benchmarking Near-Duplicate Detection in the era of Pay-walled News. In Companion Proceedings of the ACM Web Conference 2025 (WWW ’25). Association for Computing Machinery, New York, NY, USA. https://doi.org/10.1145/3701716.3715303."
-  },
-  {
-    "objectID": "publications/archival/alok2025www.html#abstract",
-    "href": "publications/archival/alok2025www.html#abstract",
-    "title": "Benchmarking Near-Duplicate Detection in the era of Pay-walled News",
-    "section": "Abstract",
-    "text": "Abstract\nRedundancy and access restriction due to paywalls are emerging as key challenges faced by web-enabled digital news ecosystem. Over the past few years, newspapers and other news sources have increasingly put-up subscription-based paywalls for accessing their content. Further, copyright, and other legal issues have curtailed the amount of text content that can be freely shared in a news feed. Well-known near-duplicate detection algorithms such as Locality Sensitive Hashing (LSH) and its variants have been used on full length versions of documents such as webpages and news articles. So, unlike traditional input of full text articles, we now get access to significantly less quantity of text available as input. This has added to the challenges and complexities to be tackled by the near-duplicate detection algorithms. There are few, if any, gold-standard datasets available for this variation of the news duplicate detection problem. In this paper, we present NDD-NS, a dataset of business news snippets which have been annotated with near-duplicates. These news snippets are representative of challenges in the content received in the news feed nowadays. Further, we benchmark the Minhash-LSH, Simhash and sentence transformer based neural approaches. We observe that hashing based LSH approaches achieve significantly less accuracy than what it achieved on the SpotSigs dataset. This highlights the challenging nature of the NDD-NS dataset. We believe this dataset will pave way for novel approaches and further research for near-duplicate detection task."
   },
   {
     "objectID": "publications/archival/tumre2025newletter.html",
@@ -222,5 +61,159 @@
     "title": "Employing Open-Source LLMs for Preventive Action Recommendations to Avoid Industrial Safety Incidents",
     "section": "",
     "text": "Rapid evolution of Large Language Models (LLMs) has revolutionized many industrial applications. However, proprietary LLMs often come with constraints such as restrictions on customizability, high cost and privacy of sensitive data, which make them less viable for industrial applications. Open-source LLMs, on the other hand, provide an accessible and flexible alternative which can enable industries to adapt models to domain-specific needs without such restrictions. This flexibility is especially crucial for manufacturing, chemical processes, construction, energy etc.\nIn this paper, we evaluate and benchmark the feasibility of using Falcon LLM, an open-source model for the task of generating preventive recommendations to improve industrial safety. Based on domain expert evaluation, we find that the standard, pre-trained Falcon LLM has limitations concerning the quality and quantity of recommendations generated. They can be of diverse quality, such as, specific, generic, or irrelevant. We show that the quantity, output format as well as domain-awareness of the model can be significantly improved using supervised fine-tuning (SFT) with a small amount of labeled data that illustrates the expected output. The quality of recommendations also improves after the fine-tuning; however, there are still many areas of improvement for this task, which we point to in this paper."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Home\n    Publications"
+  },
+  {
+    "objectID": "publications.html#archival-conference-papers",
+    "href": "publications.html#archival-conference-papers",
+    "title": "Publications",
+    "section": "Archival Conference Papers",
+    "text": "Archival Conference Papers\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n      \n        Publication\n      \n      \n        Year\n      \n    \n  \n    \n      \n      \n    \n\n\n\n  \n    Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety\n    Siddharth Tumre, Sumit Koundanya, Shubham Kumbhar, Sangameshwar Patil\n    FLAIRS\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n  \n    Benchmarking Near-Duplicate Detection in the era of Pay-walled News\n    Alok Kumar, Siddharth Tumre, Sangameshwar Patil\n    WWW\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n  \n    Improved Near-Duplicate Detection for Aggregated and Paywalled News-Feeds\n    Siddharth Tumre, Sangameshwar Patil, Alok Kumar\n    NAACL\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n  \n    Newsletter-Factory: A Thematic Newsletter Generation Tool for Curating Business Insights\n    Siddharth Tumre, Alok Kumar, Ajay Phade, Nihar Riswadkar and Sangameshwar Patil\n    Text2Story\n    (2025)\n    \n      Details\n    \n    \n    \n       Link\n    \n    \n    \n    \n       pdf\n    \n    \n  \n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications.html#non-archival-posters-workshop-papers",
+    "href": "publications.html#non-archival-posters-workshop-papers",
+    "title": "Publications",
+    "section": "Non-Archival Posters & Workshop Papers",
+    "text": "Non-Archival Posters & Workshop Papers\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Author\n      \n      \n        Publication\n      \n      \n        Year\n      \n    \n  \n    \n      \n      \n    \n\n\n\n  \n    Employing Open-Source LLMs for Preventive Action Recommendations to Avoid Industrial Safety Incidents\n    Shubham Kumbhar, Siddharth Tumre, Sumit Koundanya, Sangameshwar Patil\n    Workshop on Open-Source AI for Mainstream Use, AAAI\n    (2025)\n    \n      Details\n    \n    \n    \n  \n\n  \n    LLM-as-a-Judge: Evaluating LLM Recommendations for Industrial Safety\n    Sumit Koundanya, Shubham Kumbhar, Siddharth Tumre, Sangameshwar Patil\n    LLM4Eval @ WSDM\n    (2025)\n    \n      Details\n    \n    \n    \n  \n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/HuBERT/index.html",
+    "href": "posts/HuBERT/index.html",
+    "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
+    "section": "",
+    "text": "Overview of the HuBERT architecture showing convolutional feature extraction, Transformer encoding, masking, and prediction of cluster-based acoustic targets."
+  },
+  {
+    "objectID": "posts/HuBERT/index.html#introduction",
+    "href": "posts/HuBERT/index.html#introduction",
+    "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
+    "section": "Introduction",
+    "text": "Introduction\nHuBERT (Hidden-Unit BERT) is an encoder-only self-supervised speech representation model introduced by Hsu et al. (2021). It is inspired by the masked language modeling objective used in BERT but is designed specifically for raw speech signals.\nInstead of relying on textual supervision, HuBERT generates discrete pseudo-labels through an offline clustering process. This enables BERT-style pre-training directly on unlabeled speech data.\nThe key idea behind HuBERT is simple yet powerful:\n\nRobust speech representations can be learned by predicting masked portions of an input sequence using contextual information.\n\nThe model learns to encode unmasked acoustic inputs into meaningful latent representations while capturing long-range temporal dependencies needed to infer masked regions.\nHuBERT is released in multiple configurations:\n\n\n\nVariant\nParameters\n\n\n\n\nBASE\n~90M\n\n\nLARGE\n~300M\n\n\nX-LARGE\n~1B\n\n\n\nThese variants share the same architectural design but differ in depth and dimensionality."
+  },
+  {
+    "objectID": "posts/HuBERT/index.html#model-architecture",
+    "href": "posts/HuBERT/index.html#model-architecture",
+    "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
+    "section": "Model Architecture",
+    "text": "Model Architecture\nGiven a raw waveform input sampled at 16 kHz, the signal is first processed using a stack of seven convolutional layers, each containing 512 channels.\nThese convolutional layers:\n\nExtract low-level spectral information\n\nDownsample the temporal resolution\n\nProduce approximately one frame every 20 ms\n\nThe resulting sequence of latent acoustic features is passed to a Transformer encoder, which models contextual dependencies across time and produces contextualized representations for each time step.\n\nMasking Strategy\nDuring training:\n\n8% of tokens are randomly masked\n\nMasking is applied using span length = 10\nThe masked sequence is denoted as: \\(\\tilde{X}\\)\n\nThe Transformer processes this partially observed sequence and generates representations for both masked and unmasked time steps."
+  },
+  {
+    "objectID": "posts/HuBERT/index.html#pre-training",
+    "href": "posts/HuBERT/index.html#pre-training",
+    "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
+    "section": "Pre-Training",
+    "text": "Pre-Training\nUnlike supervised speech models that rely on phonetic labels, HuBERT generates training targets using unsupervised clustering.\n\nStep 1: Initial Feature Extraction\nThe process begins by extracting:\n\n39-dimensional MFCC features\n\n13 static coefficients\n\nFirst-order derivatives\n\nSecond-order derivatives\n\n\nThese MFCC features capture spectral characteristics relevant for phonetic discrimination.\nNext:\n\nk-means clustering is applied\n100 clusters are created\nThese clusters serve as pseudo-labels\n\n\n\nStep 2: Iterative Target Refinement\nTo improve pseudo-label quality, HuBERT uses iterative refinement.\nInstead of MFCC features:\n\nLatent representations from the 6th Transformer layer are used\nThese representations are clustered into 500 units\nOnly ~10% of training data is sampled to reduce computational cost\n\nFor larger models (LARGE and X-LARGE):\n\nClustering is not restarted from MFCC features\nInstead, deeper-layer features from a previously trained HuBERT model are used\n\nThis enables efficient scaling while maintaining high-quality pseudo-labels."
+  },
+  {
+    "objectID": "posts/HuBERT/index.html#training-objective",
+    "href": "posts/HuBERT/index.html#training-objective",
+    "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
+    "section": "Training Objective",
+    "text": "Training Objective\nTraining focuses on predicting correct cluster assignments only for masked positions.\nFor each masked time step \\(t\\), the encoder output \\(o_t\\) is projected into a class embedding space using a projection matrix \\(A\\).\nEach projected representation is compared with class embeddings:\n\\[\ne_c \\in C\n\\]\nwhere each index \\(c\\) corresponds to a discrete codeword from the clustering codebook.\nSimilarity is computed using cosine similarity, and probabilities are defined as:\n\\[\np(c \\mid \\tilde{X}, t)\n=\n\\frac{\n\\exp(\\mathrm{sim}(A o_t, e_c)/\\tau)\n}{\n\\sum_{c'=1}^{C}\n\\exp(\\mathrm{sim}(A o_t, e_{c'})/\\tau)\n}\n\\]\nwhere:\n\n\\(\\mathrm{sim}(\\cdot,\\cdot)\\) denotes cosine similarity\n\n\\(\\tau = 0.1\\) is the temperature parameter\n\nThe loss function is then the sum, over the set of masked tokens \\(M\\), of the probability that the model assigns to these correct units.\nLet:\n\n\\(M\\) = set of masked time steps\n\n\\(Z = \\{z_t\\}\\) = pseudo-label sequence from clustering\n\nThe loss function is given as:\n\\[\nL_{mask}\n=\n\\sum_{t \\in M}\n\\log p(z_t \\mid \\tilde{X}, t)\n\\]\nwhere:\n\n\\(X\\) = original input sequence\n\n\\(\\tilde{X}\\) = masked input sequence\n\n\\(z_t\\) = cluster label assigned to time step \\(t\\)\n\nThis objective encourages the model to infer masked acoustic units from context, resulting in robust speech representations that capture: phonetic structure, temporal dependencies and contextual relationships."
+  },
+  {
+    "objectID": "posts/HuBERT/index.html#conclusion",
+    "href": "posts/HuBERT/index.html#conclusion",
+    "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
+    "section": "Conclusion",
+    "text": "Conclusion\nHuBERT represents a significant development in learning robust self-supervised speech representations, enabling models to:\n\nLearn from large-scale unlabeled speech.\nReduce dependence on manual transcriptions.\nImprove performance across speech recognition and other downstream tasks."
+  },
+  {
+    "objectID": "posts/HuBERT/index.html#references",
+    "href": "posts/HuBERT/index.html#references",
+    "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
+    "section": "References",
+    "text": "References\nWei-Ning Hsu, Benjamin Bolte, Yao-Hung Hubert Tsai, Kushal Lakhotia, Ruslan Salakhutdinov, and Abdelrahman Mohamed. 2021. HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units. IEEE/ACM Trans. Audio, Speech and Lang. Proc. 29 (2021), 3451–3460. https://doi.org/10.1109/TASLP.2021.3122291"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Siddharth Tumre",
+    "section": "",
+    "text": "I am a Researcher at TCS Research in the Data and Decision Sciences Research Area, based in Pune, India. I am passionate about research and strongly believe that scientific inquiry can advance our understanding of intelligence and help solve complex real-world problems.\nView Full Curriculum Vitae →\n\n\n\nIndian Institute of Technology Delhi\n\nM.Tech in Computer Technology | 2021–2023\n\nChaitanya Bharathi Institute of Technology\n\nB.E in Computer Science and Engineering | 2017–2021\n\n\n\n\n\nTCS Research (TRDDC) | Researcher | September 2023 - present"
+  },
+  {
+    "objectID": "about.html#education",
+    "href": "about.html#education",
+    "title": "Siddharth Tumre",
+    "section": "",
+    "text": "Indian Institute of Technology Delhi\n\nM.Tech in Computer Technology | 2021–2023\n\nChaitanya Bharathi Institute of Technology\n\nB.E in Computer Science and Engineering | 2017–2021"
+  },
+  {
+    "objectID": "about.html#experience",
+    "href": "about.html#experience",
+    "title": "Siddharth Tumre",
+    "section": "",
+    "text": "TCS Research (TRDDC) | Researcher | September 2023 - present"
+  },
+  {
+    "objectID": "publications/non-archival/sumit2025llm4eval.html",
+    "href": "publications/non-archival/sumit2025llm4eval.html",
+    "title": "LLM-as-a-Judge: Evaluating LLM Recommendations for Industrial Safety",
+    "section": "",
+    "text": "Safety incidents and accidents pose significant challenges to industries, affecting workers, their families, productivity, and economic outcomes. To mitigate these risks, industries often engage specialized agencies to investigate the root causes of accidents and recommend preventive actions to avoid recurrence. Large Language Models (LLMs) offer the potential to automate and streamline the task of generating preventive action recommendations, reducing human effort. However, the reliability of these models is hindered by issues such as hallucination, raising concerns about their helpfulness in industrial safety. This poses another challenge to assess the quality and feasibility of these generated recommendations. This study aims at exploring the application of LLMs to further categorize these safety recommendations based on the relevance to the safety incident into Specific, Generic, or Irrelevant categories. A total of 2272 generated recommendations were reviewed and annotated as part of gold standard data. We examine the agreement between LLM generated and Human annotated labels for categorization of generated recommendations. Our findings suggest that LLMs currently struggle to accurately categorize their recommendations as specific to incidents. In comparison, traditional supervised learning methods outperform LLMs in recommendation classification tasks. This study highlights the limitations of existing open-source LLMs and offers insights into areas for improvement to enhance their applicability in industrial safety contexts."
+  },
+  {
+    "objectID": "publications/non-archival/sumit2025llm4eval.html#abstract",
+    "href": "publications/non-archival/sumit2025llm4eval.html#abstract",
+    "title": "LLM-as-a-Judge: Evaluating LLM Recommendations for Industrial Safety",
+    "section": "",
+    "text": "Safety incidents and accidents pose significant challenges to industries, affecting workers, their families, productivity, and economic outcomes. To mitigate these risks, industries often engage specialized agencies to investigate the root causes of accidents and recommend preventive actions to avoid recurrence. Large Language Models (LLMs) offer the potential to automate and streamline the task of generating preventive action recommendations, reducing human effort. However, the reliability of these models is hindered by issues such as hallucination, raising concerns about their helpfulness in industrial safety. This poses another challenge to assess the quality and feasibility of these generated recommendations. This study aims at exploring the application of LLMs to further categorize these safety recommendations based on the relevance to the safety incident into Specific, Generic, or Irrelevant categories. A total of 2272 generated recommendations were reviewed and annotated as part of gold standard data. We examine the agreement between LLM generated and Human annotated labels for categorization of generated recommendations. Our findings suggest that LLMs currently struggle to accurately categorize their recommendations as specific to incidents. In comparison, traditional supervised learning methods outperform LLMs in recommendation classification tasks. This study highlights the limitations of existing open-source LLMs and offers insights into areas for improvement to enhance their applicability in industrial safety contexts."
+  },
+  {
+    "objectID": "publications/archival/alok2025www.html",
+    "href": "publications/archival/alok2025www.html",
+    "title": "Benchmarking Near-Duplicate Detection in the era of Pay-walled News",
+    "section": "",
+    "text": "Kumar, A., Patil, S., & Tumre, S. (2025). Benchmarking Near-Duplicate Detection in the era of Pay-walled News. In Companion Proceedings of the ACM Web Conference 2025 (WWW ’25). Association for Computing Machinery, New York, NY, USA. https://doi.org/10.1145/3701716.3715303."
+  },
+  {
+    "objectID": "publications/archival/alok2025www.html#citation-apa",
+    "href": "publications/archival/alok2025www.html#citation-apa",
+    "title": "Benchmarking Near-Duplicate Detection in the era of Pay-walled News",
+    "section": "",
+    "text": "Kumar, A., Patil, S., & Tumre, S. (2025). Benchmarking Near-Duplicate Detection in the era of Pay-walled News. In Companion Proceedings of the ACM Web Conference 2025 (WWW ’25). Association for Computing Machinery, New York, NY, USA. https://doi.org/10.1145/3701716.3715303."
+  },
+  {
+    "objectID": "publications/archival/alok2025www.html#abstract",
+    "href": "publications/archival/alok2025www.html#abstract",
+    "title": "Benchmarking Near-Duplicate Detection in the era of Pay-walled News",
+    "section": "Abstract",
+    "text": "Abstract\nRedundancy and access restriction due to paywalls are emerging as key challenges faced by web-enabled digital news ecosystem. Over the past few years, newspapers and other news sources have increasingly put-up subscription-based paywalls for accessing their content. Further, copyright, and other legal issues have curtailed the amount of text content that can be freely shared in a news feed. Well-known near-duplicate detection algorithms such as Locality Sensitive Hashing (LSH) and its variants have been used on full length versions of documents such as webpages and news articles. So, unlike traditional input of full text articles, we now get access to significantly less quantity of text available as input. This has added to the challenges and complexities to be tackled by the near-duplicate detection algorithms. There are few, if any, gold-standard datasets available for this variation of the news duplicate detection problem. In this paper, we present NDD-NS, a dataset of business news snippets which have been annotated with near-duplicates. These news snippets are representative of challenges in the content received in the news feed nowadays. Further, we benchmark the Minhash-LSH, Simhash and sentence transformer based neural approaches. We observe that hashing based LSH approaches achieve significantly less accuracy than what it achieved on the SpotSigs dataset. This highlights the challenging nature of the NDD-NS dataset. We believe this dataset will pave way for novel approaches and further research for near-duplicate detection task."
+  },
+  {
+    "objectID": "publications/archival/tumre2025flairs.html",
+    "href": "publications/archival/tumre2025flairs.html",
+    "title": "Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety",
+    "section": "",
+    "text": "Tumre, S., Koundanya, S., Kumbhar, S., & Patil, S. (2025). Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety. The International FLAIRS Conference Proceedings, 38(1). https://doi.org/10.32473/flairs.38.1.138959"
+  },
+  {
+    "objectID": "publications/archival/tumre2025flairs.html#citation-apa",
+    "href": "publications/archival/tumre2025flairs.html#citation-apa",
+    "title": "Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety",
+    "section": "",
+    "text": "Tumre, S., Koundanya, S., Kumbhar, S., & Patil, S. (2025). Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety. The International FLAIRS Conference Proceedings, 38(1). https://doi.org/10.32473/flairs.38.1.138959"
+  },
+  {
+    "objectID": "publications/archival/tumre2025flairs.html#abstract",
+    "href": "publications/archival/tumre2025flairs.html#abstract",
+    "title": "Aligning LLMs to Improve Specificity of Preventive Action Recommendations for Industrial Safety",
+    "section": "Abstract",
+    "text": "Abstract\nImproving industrial safety using NLP technologies supports the triple bottom line of environmental, social and economic sustainability. Rapid evolution of Large Language Models (LLMs) has potential to transform the industrial safety and improve disaster mitigation. In this paper, we evaluate and benchmark the feasibility of using Falcon and Phi3 open-source LLMs for the task of generating preventive recommendations to improve industrial safety. Based on domain expert evaluation, we find that the standard, pre-trained LLMs have limitations concerning the quality and quantity of recommendations generated. They can be of diverse quality, such as specific, generic, or irrelevant. We find that the pre-trained version of Phi3 is better than base version of Falcon for the proposed task. We show that the quantity, output format as well as domain-awareness of the Falcon can be significantly improved using supervised fine-tuning (SFT) with a small amount of labeled data that illustrates the expected output. In spite of the quality improvement post-SFT and the high societal and economic impact of the application, there are still many areas of improvement, which we point to as part of future work. To the best of our knowledge, this is the first attempt to align LLMs for industrial safety recommendation improvement."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning\n\n\n\nSpeech Processing\n\nSelf-Supervised Learning\n\nASR\n\n\n\n\n\n\n\n\n\nApr 12, 2026\n\n\n\n\n\nNo matching items"
   }
 ]

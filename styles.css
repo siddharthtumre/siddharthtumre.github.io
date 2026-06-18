@@ -1,8 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap');
+
 /* css styles */
 
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
+.about-entity-name {
+  font-family: 'Playfair Display', serif;
+}
+
 .intro-box {
-  max-width: 600px;
+  max-width: 800px;
   font-size: 1.1rem;
+  text-align: justify;
 }
 
 figcaption {

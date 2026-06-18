@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.37">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -40,10 +40,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-4897d45d2f75ed4f519693be625836c5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-bba5ebae505b5c03f3f0d8040a416a6b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -215,12 +215,11 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#masking-strategy" id="toc-masking-strategy" class="nav-link" data-scroll-target="#masking-strategy">Masking Strategy</a></li>
   </ul></li>
-  <li><a href="#pre-training-procedure" id="toc-pre-training-procedure" class="nav-link" data-scroll-target="#pre-training-procedure">Pre-Training Procedure</a>
+  <li><a href="#pre-training" id="toc-pre-training" class="nav-link" data-scroll-target="#pre-training">Pre-Training</a>
   <ul class="collapse">
   <li><a href="#step-1-initial-feature-extraction" id="toc-step-1-initial-feature-extraction" class="nav-link" data-scroll-target="#step-1-initial-feature-extraction">Step 1: Initial Feature Extraction</a></li>
   <li><a href="#step-2-iterative-target-refinement" id="toc-step-2-iterative-target-refinement" class="nav-link" data-scroll-target="#step-2-iterative-target-refinement">Step 2: Iterative Target Refinement</a></li>
   </ul></li>
-  <li><a href="#prediction-mechanism" id="toc-prediction-mechanism" class="nav-link" data-scroll-target="#prediction-mechanism">Prediction Mechanism</a></li>
   <li><a href="#training-objective" id="toc-training-objective" class="nav-link" data-scroll-target="#training-objective">Training Objective</a></li>
   <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
@@ -240,7 +239,6 @@ window.Quarto = {
 </figure>
 </div>
 <p><em>Overview of the HuBERT architecture showing convolutional feature extraction, Transformer encoding, masking, and prediction of cluster-based acoustic targets.</em></p>
-<hr>
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>HuBERT (Hidden-Unit BERT) is an <strong>encoder-only self-supervised speech representation model</strong> introduced by Hsu et al.&nbsp;(2021). It is inspired by the masked language modeling objective used in BERT but is designed specifically for <strong>raw speech signals</strong>.</p>
@@ -274,7 +272,6 @@ window.Quarto = {
 </tbody>
 </table>
 <p>These variants share the same architectural design but differ in depth and dimensionality.</p>
-<hr>
 </section>
 <section id="model-architecture" class="level2">
 <h2 class="anchored" data-anchor-id="model-architecture">Model Architecture</h2>
@@ -298,11 +295,10 @@ window.Quarto = {
 <li>The masked sequence is denoted as: <span class="math inline">\(\tilde{X}\)</span></li>
 </ul>
 <p>The Transformer processes this partially observed sequence and generates representations for both <strong>masked</strong> and <strong>unmasked</strong> time steps.</p>
-<hr>
 </section>
 </section>
-<section id="pre-training-procedure" class="level2">
-<h2 class="anchored" data-anchor-id="pre-training-procedure">Pre-Training Procedure</h2>
+<section id="pre-training" class="level2">
+<h2 class="anchored" data-anchor-id="pre-training">Pre-Training</h2>
 <p>Unlike supervised speech models that rely on phonetic labels, HuBERT generates <strong>training targets using unsupervised clustering</strong>.</p>
 <section id="step-1-initial-feature-extraction" class="level3">
 <h3 class="anchored" data-anchor-id="step-1-initial-feature-extraction">Step 1: Initial Feature Extraction</h3>
@@ -324,7 +320,6 @@ window.Quarto = {
 <li><strong>100 clusters</strong> are created</li>
 <li>These clusters serve as <strong>pseudo-labels</strong></li>
 </ul>
-<hr>
 </section>
 <section id="step-2-iterative-target-refinement" class="level3">
 <h3 class="anchored" data-anchor-id="step-2-iterative-target-refinement">Step 2: Iterative Target Refinement</h3>
@@ -341,11 +336,11 @@ window.Quarto = {
 <li>Instead, deeper-layer features from a previously trained HuBERT model are used</li>
 </ul>
 <p>This enables efficient scaling while maintaining high-quality pseudo-labels.</p>
-<hr>
 </section>
 </section>
-<section id="prediction-mechanism" class="level2">
-<h2 class="anchored" data-anchor-id="prediction-mechanism">Prediction Mechanism</h2>
+<section id="training-objective" class="level2">
+<h2 class="anchored" data-anchor-id="training-objective">Training Objective</h2>
+<p>Training focuses on predicting correct cluster assignments <strong>only for masked positions</strong>.</p>
 <p>For each masked time step <span class="math inline">\(t\)</span>, the encoder output <span class="math inline">\(o_t\)</span> is projected into a class embedding space using a projection matrix <span class="math inline">\(A\)</span>.</p>
 <p>Each projected representation is compared with class embeddings:</p>
 <p><span class="math display">\[
@@ -369,18 +364,14 @@ p(c \mid \tilde{X}, t)
 </li>
 <li><span class="math inline">\(\tau = 0.1\)</span> is the temperature parameter</li>
 </ul>
-<hr>
-</section>
-<section id="training-objective" class="level2">
-<h2 class="anchored" data-anchor-id="training-objective">Training Objective</h2>
-<p>Training focuses on predicting correct cluster assignments <strong>only for masked positions</strong>.</p>
+<p>The loss function is then the sum, over the set of masked tokens <span class="math inline">\(M\)</span>, of the probability that the model assigns to these correct units.</p>
 <p>Let:</p>
 <ul>
 <li><span class="math inline">\(M\)</span> = set of masked time steps<br>
 </li>
 <li><span class="math inline">\(Z = \{z_t\}\)</span> = pseudo-label sequence from clustering</li>
 </ul>
-<p>The objective function is:</p>
+<p>The loss function is given as:</p>
 <p><span class="math display">\[
 L_{mask}
 =
@@ -395,25 +386,16 @@ L_{mask}
 </li>
 <li><span class="math inline">\(z_t\)</span> = cluster label assigned to time step <span class="math inline">\(t\)</span></li>
 </ul>
-<p>This objective encourages the model to <strong>infer masked acoustic units from context</strong>, resulting in robust speech representations that capture:</p>
-<ul>
-<li>Phonetic structure<br>
-</li>
-<li>Temporal dependencies<br>
-</li>
-<li>Contextual relationships</li>
-</ul>
-<hr>
+<p>This objective encourages the model to <strong>infer masked acoustic units from context</strong>, resulting in robust speech representations that capture: <em>phonetic structure</em>, <em>temporal dependencies</em> and <em>contextual relationships</em>.</p>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>HuBERT represents a significant development in <strong>self-supervised speech learning</strong>, enabling models to:</p>
+<p>HuBERT represents a significant development in learning robust <strong>self-supervised speech representations</strong>, enabling models to:</p>
 <ul>
-<li>Learn from <strong>large-scale unlabeled speech</strong></li>
-<li>Reduce dependence on costly transcriptions</li>
-<li>Improve performance across <strong>speech recognition</strong> and downstream tasks</li>
+<li>Learn from <em>large-scale unlabeled speech</em>.</li>
+<li>Reduce dependence on manual transcriptions.</li>
+<li>Improve performance across <em>speech recognition</em> and other downstream tasks.</li>
 </ul>
-<hr>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
