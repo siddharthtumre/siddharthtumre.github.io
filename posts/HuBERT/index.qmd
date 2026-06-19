@@ -160,7 +160,7 @@ HuBERT represents a significant development in learning robust **self-supervised
 
 - Learn from _large-scale unlabeled speech_.
 - Reduce dependence on manual transcriptions.
-- Improve performance across _speech recognition_ and other downstream tasks.
+- Improve performance across _speech recognition_ and other tasks.
 
 ## References
 

@@ -25,10 +25,16 @@ comments: false
 }
 
 @media (max-width: 991.98px) {
+  #hero-heading p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991.98px) {
     div.quarto-about-solana .about-entity .about-links {
         flex-direction: row;
         column-gap: .8em;
-        row-gap: 15px;
+        row-gap: 0.8em;
         flex-wrap: wrap;
         justify-content: center;
         border-radius: 4px;
