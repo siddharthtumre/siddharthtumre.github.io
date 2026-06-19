@@ -137,7 +137,7 @@
     "href": "posts/HuBERT/index.html#conclusion",
     "title": "HuBERT: Hidden-Unit BERT for Self-Supervised Speech Representation Learning",
     "section": "Conclusion",
-    "text": "Conclusion\nHuBERT represents a significant development in learning robust self-supervised speech representations, enabling models to:\n\nLearn from large-scale unlabeled speech.\nReduce dependence on manual transcriptions.\nImprove performance across speech recognition and other downstream tasks."
+    "text": "Conclusion\nHuBERT represents a significant development in learning robust self-supervised speech representations, enabling models to:\n\nLearn from large-scale unlabeled speech.\nReduce dependence on manual transcriptions.\nImprove performance across speech recognition and other tasks."
   },
   {
     "objectID": "posts/HuBERT/index.html#references",
