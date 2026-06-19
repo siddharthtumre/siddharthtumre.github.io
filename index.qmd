@@ -1,20 +1,72 @@
 ---
 title: "Siddharth Tumre"
-subtitle: "Researcher at [TCS Research](https://www.tcs.com/what-we-do/research)"
-page-layout: full
-title-block-banner: false
-toc: false
+image: profile.jpeg
 about:
-  template: jolla
-  image: profile.jpeg
+  template: solana
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:siddharth.tumre@outlook.com
+    - icon: github
+      text: GitHub
+      href: https://github.com/siddharthtumre
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/siddharth-tumre/
+    - icon: twitter
+      text: Twitter
+      href: https://x.com/siddharth_tumre
 comments: false
-css: styles.css
 ---
 
-<div class="intro-box">
-I am a Researcher with experience across a range of natural language processing (NLP) tasks, including text classification, named entity recognition, semantic textual similarity, information extraction, and natural language generation using state-of-the-art statistical, discriminative, and generative models.
+<style>
+#hero-heading p {
+  text-align: justify;
+}
+
+@media (max-width: 991.98px) {
+    div.quarto-about-solana .about-entity .about-links {
+        flex-direction: row;
+        column-gap: .8em;
+        row-gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 4px;
+        padding-bottom: 1.2em;
+    }
+}
+
+@media (max-width: 991.98px) {
+    div.quarto-about-solana .about-entity .about-link {
+        font-size: 0.8em;
+        padding: .25em .5em;
+        text-align: center;
+        border-radius: 6px;
+    }
+}
+
+</style>
+
+::: {#hero-heading}
+
+I am a Researcher at [TCS Research](https://www.tcs.com/what-we-do/research) with experience across a range of natural language processing (NLP) tasks, including text classification, named entity recognition, semantic textual similarity, information extraction, and natural language generation using state-of-the-art statistical, discriminative, and generative models.
 
 My research interests center on grounded reasoning, knowledge representation, and the integration of structured knowledge into foundation models. More recently, I have been exploring knowledge graphs and reasoning, especially natural language to graph query language translation. I am also exploring speech technologies, with a focus on automatic speech recognition (ASR) for disordered speech.
-</div>
 
-<p class="contact-line">Feel free to <a href="mailto:siddharth.tumre@outlook.com">get in touch</a>.</p>
+[_View Full Curriculum Vitae →_](CV1104.pdf){target="_blank" rel="noopener"}
+
+## Education
+
+**Indian Institute of Technology Delhi**
+: M.Tech in Computer Technology | 2021–2023
+
+**Chaitanya Bharathi Institute of Technology**
+: B.E in Computer Science and Engineering | 2017–2021
+
+## Experience
+
+**TCS Research (_TRDDC_)**
+: Researcher | September 2023 - present
+
+:::
+

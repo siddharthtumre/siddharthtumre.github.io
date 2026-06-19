@@ -13,9 +13,7 @@ website:
       - href: publications.qmd
         text: Publications
       - href: blog.qmd
-        text: Blog 
-      - href: about.qmd
-        text: About
+        text: Blog
       - text: More
         menu:
           - icon: file-earmark-pdf
