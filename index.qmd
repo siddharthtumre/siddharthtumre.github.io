@@ -51,6 +51,11 @@ comments: false
     }
 }
 
+#mapmyvisitors {
+  display: block;
+  margin-top: 5em;
+}
+
 </style>
 
 ::: {#hero-heading}
@@ -73,6 +78,11 @@ My research interests center on grounded reasoning, knowledge representation, an
 
 **TCS Research (_TRDDC_)**
 : Researcher | September 2023 - present
+
+
+```{=html}
+<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=jaNtobhqzZmbV68S5H6GYw3ETcKT5i5rmeHlXdX2PCQ&cl=ffffff&w=a"></script>
+```
 
 :::
 
