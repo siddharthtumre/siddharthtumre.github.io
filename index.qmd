@@ -81,7 +81,7 @@ My research interests center on grounded reasoning, knowledge representation, an
 
 
 ```{=html}
-<script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=jaNtobhqzZmbV68S5H6GYw3ETcKT5i5rmeHlXdX2PCQ&cl=ffffff&w=a"></script>
+<script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?cl=ffffff&w=a&t=tt&d=jaNtobhqzZmbV68S5H6GYw3ETcKT5i5rmeHlXdX2PCQ&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353"></script>
 ```
 
 :::
